@@ -1,0 +1,35 @@
+body {
+    background-color: #95c5e2;
+}
+
+h3 {
+    padding: 20px;
+    color: black;
+    text-align: center;
+}
+
+.myRow {
+    padding-bottom: 10px;
+    margin-left: 365px;
+}
+
+.labelCol {
+    float: left;
+    width: 100px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.mdpOublie {
+    padding-bottom: 10px;
+    margin-left: 485px;
+}
+
+.ou {
+    padding-bottom: 10px;
+    margin-left: 550px;
+}
+
+.bouton {
+    margin-left: 480px;
+}
