@@ -3,41 +3,70 @@
 
 <head>
     <title>ECE MarketPlace</title>
-    <link rel="stylesheet" type="text/css" href="Page_daccueil.css">
+    <link rel="stylesheet" type="text/css" href="CSS/style_css_base.css">
     <div id="enTete">
-        <img id="logoAccueil" src="files/logo/ECEMarket_base.png">
-        <div>
-            <h1>
-                ECE Market Place
-            </h1>
+        <div id="topEntete">
+            <a href="PageAccueil.html"><img id="logoAccueil" src="files/logo/ECEMarket_base.png"></a>
+            <div id="barreDeRecherche">
+                <table>
+                    <tr>
+                        <td>
+                            <h4>Rechercher</h4>
+                        </td>
+                        <td>
+                            <input type="search" id="barreRecherche" name="barreRecherche">
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </div>
-        <div id="barreDeRecherche">
-            <!--mettre un truc pour la barre de recherche-->
+        
+        <div id="divBarreEntete">
+            <div id="boutonMenu">
+                <ul>
+                    <li class="menuDeroulant"><a href="#">Catégorie</a>
+                        <ul class="sousMenuDeroulant">
+                            <li><a href="#">Livre, BD, Ebooks</a></li>
+                            <li><a href="#">Livre, BD, Ebooks</a></li>
+                            <li><a href="#">Livre, BD, Ebooks</a></li>
+                            <li><a href="#">Livre, BD, Ebooks</a></li>
+                            <li><a href="#">Livre, BD, Ebooks</a></li>
+                            <li><a href="#">Livre, BD, Ebooks</a></li>
+                        </ul>
+
+                    </li>
+                </ul>
+                <a href="TrucpourAllerToutParcourir">Tout Parcourir</a>
+            </div>
+            <div id="barreEntete">
+                <a class="boutonNav" href="TrucpourAllerAuNotif"><img id="logoNotification" src="files/logo/notification_remind.png">Notifications</a>
+                <a class="boutonNav" href="TrucpourAllerAuPanier"><img id="logoPanier" src="files/logo/iconfinder_cart.png">Panier</a>
+                <a class="boutonNav" href="TrucpourAllerAuCompte"><img id="logoCompte" src="files/logo/iconfinder_User.png">Mon compte</a>
+            </div>
         </div>
+        
+        
     </div>
 </head>
-<nav>
-    <div id="barreEntete">
-        <a class="boutonNav" href="TrucpourAllerALAccueil">Accueil</a>
-        <a class="boutonNav" href="TrucpourAllerToutParcourir">Tout Parcourir</a>
-        <a class="boutonNav" href="TrucpourAllerAuNotif">Notifications</a>
-        <a class="boutonNav" href="TrucpourAllerAuPanier">Panier</a>
-        <a class="boutonNav" href="TrucpourAllerAuCompte">Mon compte</a>
-    </div>
-</nav>
 
 <body>
-    <div id="BanderoleEvenement">
+    <div id="teteBody"></div>
+    <div id="banderoleEvenement">
         T'as ecris comme un enculé je comprends pas
     </div>
-    <div id="actualité">
+    <div id="actualites">
         Mais vraimenta
     </div>
 
 </body>
 <footer>
-    <div id="footer">
-        copyright et tout le blala
+    
+    <div></div>
+    <div>
+        ©2021 @EntreprisePasCher <br> <br>
+        Alicia GUADIRZADEH <br>
+        Joé LHUERRE <br>
+        Théric PHERON
     </div>
 </footer>
 </html title { align-content: center; } div { background-color: black; } .enTete{ background-color: blue; align-content: center; }
