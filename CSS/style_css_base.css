@@ -2,11 +2,13 @@ html, body {
     margin: 0px;
     padding:0px;
     font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    justify-content: center
 }
 #enTete{
     position: fixed;
     width: 100%;
     height: 120px;
+    z-index: 10;
 }
 #topEntete{
     background-color: #007179;
@@ -36,9 +38,9 @@ html, body {
 
 #divBarreEntete{
     height: 45px;
-    overflow: hidden;
     padding:0px;
     margin: 0px;
+    background-color: white;
 }
 #barreEntete{
     padding: 10px;
@@ -53,28 +55,18 @@ html, body {
 #boutonMenu{
     float: left;
     background-color: rgb(255, 255, 255);
-}
-#boutonMenu ul{
-    list-style-type: none;
-}
-#boutonMenu ul li{
-    float: left;
-    width: 25%;
-    text-align: center;
-}
-#boutonMenu ul::after{
-    content:"";
-    display: table;
-    clear: both;
+    text-align : center;
+    padding-top: 15px;
+    padding-left:2%;
 }
 #boutonMenu a{
-    display: block;
-    text-decoration: ;
-}
-#boutonMenu a{
-    text-align: center;
     text-decoration: none;
-    color: #007179;
+    color:#007179;
+    
+}
+#boutonMenu a:hover{
+    color: #02cbda;
+    border-bottom: 2px solid gold;
 }
 .boutonNav{
     padding: 8px;
@@ -83,28 +75,58 @@ html, body {
     border-radius:5px;
     text-decoration: none;
     color: #007179;
-    
 }
 .boutonNav img{
     height: 20px;
     padding: 5px;
     vertical-align: middle;
 }
+#menuVertical{
+    background-color: rgb(1, 175, 175);
+    width: auto;
+}
+#menuVertical table{
+    padding: 5px;
+}
+#corpSite{
+    width:86.3%;
+}
 #teteBody{
     height: 115px;
 }
+#corpBody {
+    display: flex;
+}
 #banderoleEvenement{
-    padding-top: 500px;
-    padding: 180px;
-    background-color: #c8e2e4;
-    height: 20px;
-    text-align:center;
+    height: 400px;
+    overflow:hidden;
+    background-color: #ffffff;
+}
+#banderoleEvenement .imageBanderoleEvenement{
+    display: flex;
+    animation-duration: 20s;
+    animation-name:imageBanderoleEvenement ;
+    animation-iteration-count: infinite;
+}
+@keyframes imageBanderoleEvenement{
+    0%{
+        transform:translateX(0);
+    }
+    33%{
+        transform:translateX(-2000px);
+    }
+    66%{
+        transform:translateX(-4000px);
+    }
+    100%{
+        transform:translateX(0);
+    }
 }
 
 #actualites{
     background-color: #9bcecf;
     padding: 5px;
-    height: 500px;
+    height: 5000px;
     text-align:center;
 }
 
