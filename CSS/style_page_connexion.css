@@ -1,0 +1,115 @@
+#banderoleTitreAd, #banderoleTitreA, #banderoleTitreV{
+    text-align: center;
+    border: 0px;
+    padding-top: 13%;
+    margin: 0px;
+    float: left;
+    height:87%;
+
+}
+#banderoleTitreAd{
+    background-color: rgba(255, 0, 0, 0.678);
+	-webkit-box-shadow: 0px 0px 40px #FF5D5D;
+	box-shadow: 0px 0px 40px #FF5D5D;
+}
+#banderoleTitreA{
+    background-color: #009494d7;
+	-webkit-box-shadow: 0px 0px 40px #00b698d7;
+	box-shadow: 0px 0px 40px #00b698d7;
+}
+#banderoleTitreV{
+    background-color: #007d9ce1;
+	-webkit-box-shadow: 0px 0px 40px #00caeed7;
+	box-shadow: 0px 0px 40px #00caeed7;
+}
+
+
+h1 {
+    padding: 40px;
+    color: white;
+    margin: 0px;
+}
+
+h3 {
+	padding: 20px;
+	color: black;
+	text-align: center;
+    font-size: 18px;
+}
+
+.ligneEcran {
+    padding-bottom: 10px;
+    padding-left: 20%;
+}
+
+.labelCol {
+    float: left;
+    width: 120px;
+    text-align: right;
+    padding-right: 25px;
+}
+
+#password, #mail{
+    border : solid #007179;
+    border-radius: 10px;
+    width:40%;
+    height: 20  px;
+}
+
+#mdpOublie {
+	padding-bottom: 10px;
+	padding-top: 10px;
+	text-align: center;
+}
+
+#ou {
+    text-align: center;
+}
+
+#boutonCreationCompte, #boutonConnexion{
+    text-align: center;
+    border : solid #007179;
+    border-radius: 50px;
+    height: 30px;
+    width: 230px;
+    background-color: #007179;
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#boutonCreationCompte{
+    background-color: #0395a034;
+}
+
+#ecranConnexionAd,#ecranConnexionA,#ecranConnexionV  {
+	border-radius: 20px;
+	width: 50%;
+	height: 332px;
+	display: block;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-left: auto;
+	margin-right: 23%;
+	margin-bottom: 150px;
+	margin-top: -7px;
+	margin-bottom: 150px;
+	position: relative;
+	top: 15%;
+	left: 15%;
+}
+#ecranConnexionAd{
+    background-color: rgba(255, 0, 0, 0.637);
+	-webkit-box-shadow: 0px 0px 40px #FF5D5D;
+	box-shadow: 0px 0px 40px #FF5D5D;
+}
+#ecranConnexionA{
+    background-color: #009494d7;
+	-webkit-box-shadow: 0px 0px 40px #00b698d7;
+	box-shadow: 0px 0px 40px #00b698d7;
+}
+#ecranConnexionV{
+    background-color: #007d9ce1;
+    -webkit-box-shadow: 0px 0px 40px #00caeed7;
+	box-shadow: 0px 0px 40px #00caeed7;
+}

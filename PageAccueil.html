@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ECE MarketPlace</title>
     <link rel="stylesheet" type="text/css" href="CSS/style_css_base.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="JS/scripte_menu_vertical.js" async></script>
 
 
     <div id="enTete">
@@ -27,11 +29,11 @@
         
         <div id="divBarreEntete">
             <div id="boutonMenu">
-                <a>Catégorie</a>
+                <button id="boutonMenuB">Catégories</button>
             </div>
             <div id="barreEntete">
-                <a class="boutonNav" href="PageConnexion.html"><img id="logoCompte" src="files/logo/iconfinder_User.png">Se connecter</a>
-                <a class="boutonNav" href="PageConnexion.html"><img id="logoPanier" src="files/logo/iconfinder_cart.png">Panier</a>
+                <a class="boutonNav" href="PageConnexion_Vendeur.html"><img id="logoCompte" src="files/logo/iconfinder_User.png">Se connecter</a>
+                <a class="boutonNav" href="PageConnexion_Vendeur.html"><img id="logoPanier" src="files/logo/iconfinder_cart.png">Panier</a>
             </div>
         </div>
         
@@ -43,18 +45,20 @@
     <div id="teteBody"></div>
     <div id="corpBody">
         <div id="menuVertical">
-            <table>
-                <td>
-                    <tr>Livre, eBooks<br></tr>
-                    <tr>Informatique, smartphone<br></tr>
-                    <tr>Soin Beauté<br></tr>
-                    <tr>Bijoux, accesoires<br></tr>
-                    <tr>Décoration, maison<br></tr>
-                    <tr>Jardin, bricolage<br></tr>
-                </td>
-            </table>
+            <a href="categorieLivre.html"><div>Livre, BD, eBooks<br></div></a>
+            <a href="categoriePhoto.html"><div>Photo, Caméra<br></div></a>
+            <a href="categorieSon.html"><div>Son, Hi-fi<br></div></a>
+            <a href="categorieTV.html"><div>TV, Vidéo<br></div></a>
+            <a href="categorieInformatique.html"><div>Informatique, Multimédia<br></div></a>
+            <a href="categorieSmarthPhone.html"><div>SmartPhone, Téléphonie<br></div></a>
+            <a href="categorieSport.html"><div>Sport<br></div></a>
+            <a href="categorieSoin.html"><div>Soin Beauté<br></div></a>
+            <a href="categorieBijoux.html"><div>Bijoux, Accesoires<br></div></a>
+            <a href="categorieDecoration.html"><div>Décoration, Maison<br></div></a>
+            <a href="categorieJardin.html"><div>Jardin, Bricolage<br></div></a>
         </div>
         <div id="corpSite">
+            
             <div id="banderoleEvenement">
                 <div class="imageBanderoleEvenement">
                     <a href=""><img src="files/img/2000x-_MEG__FD_2021.png" alt="Annonce1"></a>

@@ -2,13 +2,18 @@ html, body {
     margin: 0px;
     padding:0px;
     font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
-    justify-content: center
+    justify-content: center;
+    background-color: #ffffff;
 }
 #enTete{
-    position: fixed;
-    width: 100%;
-    height: 120px;
-    z-index: 10;
+	position: fixed;
+	width: 100%;
+	height: 112px;
+	z-index: 10;
+	border-bottom-color: #2E2E2E;
+	color: #424242;
+	-webkit-box-shadow: 0 -3px 116px #000000;
+	box-shadow: 0 -3px 116px #000000;
 }
 #topEntete{
     background-color: #007179;
@@ -56,19 +61,23 @@ html, body {
     float: left;
     background-color: rgb(255, 255, 255);
     text-align : center;
-    padding-top: 15px;
+    padding-top: 10px;
     padding-left:2%;
 }
-#boutonMenu a{
-    text-decoration: none;
+
+#boutonMenu button{
     color:#007179;
-    
+    border: 0px;
+    background-color: transparent;
+    height:23px;
+    font-size: 20px;
+    font-weight: bold;
 }
-#boutonMenu a:hover{
+#boutonMenu button:hover{
     color: #02cbda;
     border-bottom: 2px solid gold;
 }
-.boutonNav{
+.boutonNav, #boutonConnexionAd, #boutonConnexionV, #boutonConnexionA{
     padding: 8px;
     background-color: rgb(255, 255, 255);
     border: 3px solid #007179;
@@ -76,20 +85,47 @@ html, body {
     text-decoration: none;
     color: #007179;
 }
-.boutonNav img{
+#boutonConnexionAd{
+    color: #c70000
+}
+#boutonConnexionV{
+    color: #003c5f;
+}
+#boutonConnexionA{
+    color: #02cbda;
+}
+
+.boutonNav img,  #boutonConnexionAd img, #boutonConnexionV img, #boutonConnexionA img {
     height: 20px;
     padding: 5px;
     vertical-align: middle;
 }
 #menuVertical{
-    background-color: rgb(1, 175, 175);
-    width: auto;
+	background-color: rgb(255, 255, 255);
+	width: 200px;
+	display: none;
+	transition: width 1s;
+	z-index: 10;
+	overflow: hidden;
+	position: fixed;
+	-webkit-box-shadow: -31px 109px 116px 31px #000000;
+	box-shadow: -31px 109px 116px 31px #000000;
 }
-#menuVertical table{
-    padding: 5px;
+#menuVertical a{
+    text-decoration: none;
+    color: #008892;
 }
+#menuVertical div{
+    padding: 10px 20px 30px 10px;
+    border-top: 0.5px solid #007179;
+}
+
 #corpSite{
-    width:86.3%;
+    width:100%;
+    transition: width 1s, left 1s;
+    position: relative;
+    left: 0%;
+    overflow: hidden;
 }
 #teteBody{
     height: 115px;
