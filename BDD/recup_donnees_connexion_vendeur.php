@@ -1,5 +1,5 @@
 <?php
-var_dump($_POST);
+
  //connexion à la base de données
  try{
  $pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
@@ -18,13 +18,11 @@ var_dump($_POST);
       
         if($mdp === $res['mdp'] AND $mail === $res['mail'])
         {
-            echo 'c est bon normalement';
-            //header('Location: PageAccueil_Vendeur.html');
+            header('Location: PageAccueil_Vendeur.html');
         }
         else
         {
-            echo 'ya un truc qui cloche';
-            //header('location:aboutus.php');
+            header(' ../annexes/PageConnexion_Acheteur_Erreur.html');
         }
       
    }
