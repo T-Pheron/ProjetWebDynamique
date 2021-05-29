@@ -22,7 +22,7 @@
         if($mdp_bdd === $res['mdp'] && $mail_bdd === $res['mail'])
         {
             $message='cest oke ca a bien ete trouve mafia';
-            //header('Location:pacces.php');
+            header('Location: ../PageAcceuil.html');
         }
         else
         {
