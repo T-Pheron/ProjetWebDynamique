@@ -4,7 +4,7 @@
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ECE MarketPlace - Connexion Vendeur</title>
+<title>ECE MarketPlace - Connexion Acheteur</title>
 <link rel="stylesheet" type="text/css" href="CSS/style_css_base.css">
 <link rel="stylesheet" type="text/css" href="CSS/style_page_connexion.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -59,37 +59,32 @@
             <a href="categorieJardin.html"><div>Jardin, Bricolage<br></div></a>
         </div>
         <div id="corpSite">
-            <div id="banderoleTitreA"><h1>Compte acheteur</h1></div>
+            <div id="banderoleTitreA"><h1>Compte client</h1></div>
             <div id="ecranConnexionA">
-                <h3>Se connecter avec mon compte acheteur ECE MarketPlace.</h2>
+                <h3>Se connecter avec mon compte client ECE MarketPlace.</h2>
         
-                    <form>
-        
+                    <form action="recup_donnees_connexion_acheteur.php" method="post">
                         <div class="ligneEcran">
                             <label class="labelCol" for="mail">Email :</label>
-                            <input type="text" id="mail"></td>
+                            <input type="text" id="mail" name="mail"></td>
                         </div>
         
                         <div class="ligneEcran">
                             <label class="labelCol" for="password">Mot de passe :</label>
-                            <td><input type="text" id="password"></td>
-                            </tr>
+                            <input type="text" id="password" name="mdp">
                         </div>
         
                         <div>
                             <button id="boutonConnexion"> Se connecter</bouton>
                         </div>
-        
-                        <div id="mdpOublie">
-                            <a href="ProjetWeb_PageMotdepasseoublie_v1.html">mot de passe oublié ?</a>
-                        </div>
-                        <div id="ou">
-                            <p>ou</p>
-                        </div>
-                        <button id="boutonCreationCompte">Créer mon compte adminsitrateur</button>
-        
-        
                     </form>
+                    <div id="mdpOublie">
+                        <a href="ProjetWeb_PageMotdepasseoublie_v1.html">mot de passe oublié ?</a>
+                    </div>
+                    <div id="ou">
+                        <p>ou</p>
+                    </div>
+                    <a href="PageCréation_Acheteur.html" id="boutonCreationCompte">Créer mon compte client</a>
             </div>
         </div>
     </div>

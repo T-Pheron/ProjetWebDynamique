@@ -23,7 +23,6 @@
 	box-shadow: 0px 0px 40px #00caeed7;
 }
 
-
 h1 {
     padding: 40px;
     color: white;
@@ -49,7 +48,7 @@ h3 {
     padding-right: 25px;
 }
 
-#password, #mail{
+#password, #mail, #name, #firstname, #pseudo{
     border : solid #007179;
     border-radius: 10px;
     width:40%;
@@ -79,10 +78,14 @@ h3 {
     margin-right: auto;
 }
 #boutonCreationCompte{
-    background-color: #0395a034;
+	height: 16px;
+	width: 210px;
+	background-color: #0395a034;
+	text-decoration: none;
+	font-size: 12px;
 }
 
-#ecranConnexionAd,#ecranConnexionA,#ecranConnexionV  {
+#ecranConnexionAd,#ecranConnexionA,#ecranConnexionV {
 	border-radius: 20px;
 	width: 50%;
 	height: 332px;
@@ -93,7 +96,6 @@ h3 {
 	margin-right: 23%;
 	margin-bottom: 150px;
 	margin-top: -7px;
-	margin-bottom: 150px;
 	position: relative;
 	top: 15%;
 	left: 15%;
