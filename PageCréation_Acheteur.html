@@ -48,34 +48,34 @@
             <div id="ecranConnexionA">
                 <h3>Vous n'avez toujours pas de compte chez nous ? N'hésitez plus et créez votre compte client ECE MarketPlace.</h2>
         
-                    <form>
-                        <div class="ligneEcran">
+                    <form action="BDD\recup_donnees_creation_acheteur.php" method="post" >
+                        <div class="ligneEcran" >
                             <label class="labelCol" for="name">Nom* :</label>
-                            <input type="text" required id="name" minlength="2" require></td>
+                            <input type="text" required id="name" minlength="2" require name="nom"></td>
                         </div>
             
                         <div class="ligneEcran">
                             <label class="labelCol" for="firstname">Prénom* :</label>
-                            <input type="text" required id="firstname" minlength="2" require></td>
+                            <input type="text" required id="firstname" minlength="2" require name="prenom" ></td>
                         </div>
                         
                         <div class="ligneEcran">
                             <label class="labelCol" for="pseudo" minlength="2" require>Pseudo* :</label>
-                            <input type="text" required id="pseudo"></td>
+                            <input type="text" required id="pseudo" name="pseudo"></td>
                         </div>
             
                         <div class="ligneEcran">
                             <label class="labelCol" for="mail">Email* :</label>
-                            <input type="email" required pattern=".+.fr|.+.com" id="mail" minlength="8" require ></td>
+                            <input type="email" required pattern=".+.fr|.+.com" id="mail" minlength="8" require name="mail" ></td>
                         </div>
             
                         <div class="ligneEcran">
                             <label class="labelCol" for="password">Mot de passe* :</label>
-                            <td><input type="password" required id="password"  minlength="8" require></td>
+                            <td><input type="password" required id="password"  minlength="8" require name="mdp" ></td>
                             </tr>
                         </div>
             
-                        <button id="boutonConnexion">Créer</button>
+                        <button id="boutonConnexion" type="submit" >Créer</button>
                     </form>
             </div>
         </div>

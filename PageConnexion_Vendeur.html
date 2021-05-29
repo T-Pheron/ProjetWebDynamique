@@ -63,30 +63,30 @@
             <div id="ecranConnexionV">
                 <h3>Se connecter avec mon compte vendeur ECE MarketPlace.</h2>
         
-                    <form>
+                    <form action="BDD\recup_donnees_connexion_vendeur.php" method="post">
         
                         <div class="ligneEcran">
                             <label class="labelCol" for="mail">Email :</label>
-                            <input type="text" id="mail">
+                            <input type="text" id="mail" name='mail'>
                         </div>
         
                         <div class="ligneEcran">
                             <label class="labelCol" for="password">Mot de passe :</label>
-                            <input type="text" id="password">
+                            <input type="text" id="password" name='mdp'>
                         </div>
         
                         <div>
                             <button id="boutonConnexion"> Se connecter</bouton>
                         </div>
-        
-                        <div id="mdpOublie">
-                            <a href="ProjetWeb_PageMotdepasseoublie_v1.html">mot de passe oublié ?</a>
-                        </div>
-                        <div id="ou">
-                            <p>ou</p>
-                        </div>
-                        <a href="PageCréation_Vendeur.html" id="boutonCreationCompte">Créer mon compte vendeur</a>
+
                     </form>
+                    <div id="mdpOublie">
+                        <a href="ProjetWeb_PageMotdepasseoublie_v1.html">mot de passe oublié ?</a>
+                    </div>
+                    <div id="ou">
+                        <p>ou</p>
+                    </div>
+                    <a href="PageCréation_Vendeur.html" id="boutonCreationCompte">Créer mon compte vendeur</a>
             </div>
         </div>
     </div>

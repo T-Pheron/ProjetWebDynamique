@@ -62,34 +62,29 @@
             <div id="banderoleTitreAd"><h1>Compte administrateur</h1></div>
             <div id="ecranConnexionAd">
                 <h3>Se connecter avec mon compte administrateur ECE MarketPlace.</h2>
-        
-                    <form>
-        
+                    <form action="BDD\recup_donnees_connexion_admin.php" method="post">
                         <div class="ligneEcran">
                             <label class="labelCol" for="mail">Email :</label>
-                            <input type="text" id="mail"></td>
+                            <input type="text" id="mail" name='mail'></td>
                         </div>
         
                         <div class="ligneEcran">
                             <label class="labelCol" for="password">Mot de passe :</label>
-                            <td><input type="text" id="password"></td>
+                            <td><input type="text" id="password" name='mdp'></td>
                             </tr>
                         </div>
         
                         <div>
-                            <button id="boutonConnexion"> Se connecter</bouton>
+                            <button id="boutonConnexion" type="submit"> Se connecter</bouton>
                         </div>
-        
-                        <div id="mdpOublie">
-                            <a href="ProjetWeb_PageMotdepasseoublie_v1.html">mot de passe oublié ?</a>
-                        </div>
-                        <div id="ou">
-                            <p>ou</p>
-                        </div>
-                        <a href="PageCréation_Admin.html" id="boutonCreationCompte">Créer mon compte adminsitrateur</a>
-        
-        
                     </form>
+                    <div id="mdpOublie">
+                        <a href="ProjetWeb_PageMotdepasseoublie_v1.html">mot de passe oublié ?</a>
+                    </div>
+                    <div id="ou">
+                        <p>ou</p>
+                    </div>
+                    <a href="PageCréation_Admin.html" id="boutonCreationCompte">Créer mon compte adminsitrateur</a>
             </div>
         </div>
     </div>
