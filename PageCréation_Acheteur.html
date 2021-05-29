@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ECE MarketPlace - Création compte client</title>
+<link rel="stylesheet" type="text/css" href="CSS/style_css_base.css">
+<link rel="stylesheet" type="text/css" href="CSS/style_page_connexion.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="JS/scripte_menu_vertical.js" async></script>   
+
+
+<div id="enTete">
+        <div id="topEntete">
+            <a href="PageAccueil.html"><img id="logoAccueil" src="FIles/logo/ECEMarket_base.png"></a>
+            <div id="barreDeRecherche">
+                <table>
+                    <tr>
+                        <td>
+                            <h4>Rechercher</h4>
+                        </td>
+                        <td>
+                            <input type="search" id="barreRecherche" name="barreRecherche">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="divBarreEntete">
+            <div id="barreEnteteInscription">
+                <a id="boutonConnexionV" href="PageCréation_Vendeur.html"><img id="logoCompte" src="Files/logo/iconfinder_user_plus.png">Compte vendeur</a>
+                <a id="boutonConnexionAd" href="PageCréation_Admin.html"><img id="logoCompte" src="Files/logo/iconfinder_user_plus.png">Compte administrateur</a>
+                <a id="boutonConnexionA" href="PageConnexion_Acheteur.html"><img id="logoCompte" src="Files/logo/iconfinder_User.png">Connexion</a>
+            </div>
+        </div>
+
+
+</div>
+</head>
+
+<body>
+    <div id="teteBody"></div>
+    <div id="corpBody">
+        <div id="corpSite">
+            <div id="banderoleTitreA"><h1>Créer mon compte client</h1></div>
+            <div id="ecranConnexionA">
+                <h3>Vous n'avez toujours pas de compte chez nous ? N'hésitez plus et créez votre compte client ECE MarketPlace.</h2>
+        
+                    <form>
+                        <div class="ligneEcran">
+                            <label class="labelCol" for="name">Nom* :</label>
+                            <input type="text" required id="name" minlength="2" require></td>
+                        </div>
+            
+                        <div class="ligneEcran">
+                            <label class="labelCol" for="firstname">Prénom* :</label>
+                            <input type="text" required id="firstname" minlength="2" require></td>
+                        </div>
+                        
+                        <div class="ligneEcran">
+                            <label class="labelCol" for="pseudo" minlength="2" require>Pseudo* :</label>
+                            <input type="text" required id="pseudo"></td>
+                        </div>
+            
+                        <div class="ligneEcran">
+                            <label class="labelCol" for="mail">Email* :</label>
+                            <input type="email" required pattern=".+.fr|.+.com" id="mail" minlength="8" require ></td>
+                        </div>
+            
+                        <div class="ligneEcran">
+                            <label class="labelCol" for="password">Mot de passe* :</label>
+                            <td><input type="password" required id="password"  minlength="8" require></td>
+                            </tr>
+                        </div>
+            
+                        <button id="boutonConnexion">Créer</button>
+                    </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</body>
+<footer>
+
+    <div></div>
+    <div>
+        ©2021 @EntreprisePasCher <br> <br> Alicia GHADIRZADEH <br> Joé LHUERRE <br> Théric PHERON
+    </div>
+</footer>
+</html title { align-content: center; } div { background-color: black; } .enTete{ background-color: blue; align-content: center; }
