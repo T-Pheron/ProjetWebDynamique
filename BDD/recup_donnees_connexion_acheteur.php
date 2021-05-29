@@ -1,5 +1,4 @@
 <?php
-var_dump($_POST);
 
  //connexion à la base de données
  try{
@@ -20,13 +19,11 @@ var_dump($_POST);
       {
         if($mdp === $res['mdp'] && $mail === $res['mail'])
         {
-            echo 'cest oke ca a bien ete trouve mafia';
             header('Location: ../PageAccueil_Acheteur.html');
         }
         else
         {
-            echo 'cest pas encore ca mafia';
-            //header('location:aboutus.php');
+            header('location:aboutus.php');
         }
       }
    }
