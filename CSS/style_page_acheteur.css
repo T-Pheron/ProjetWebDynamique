@@ -19,6 +19,7 @@
 	box-shadow: 0px 0px 40px #00caeed7;
 	width: 90%;
 	margin-left: 6%;
+	margin-top: 51px;
 }
 
 #banderoleTitre h2{
@@ -38,7 +39,6 @@
 .ligneEcran {
 	padding-bottom: 10px;
 	padding-left: 20%;
-	height: 31px;
 	padding-top: 10px;
 }
 
@@ -49,13 +49,17 @@
     padding-right: 25px;
 }
 
-#password, #mail, #name, #firstname, #pseudo,#addresse1,#addresse2,#city,#postalcode, #country, #number{
+#password, #mail, #name, #firstname, #pseudo,#addresse1,#addresse2,#city,#postalcode, #country, #number, #date, #securitynumber{
     border : solid #007179;
     border-radius: 10px;
     width:40%;
     height: 20px;
 }
-
+#ratioLigne{
+	height: 20px;
+	margin-left: 40%;
+	text-align: left;
+}
 #mdpOublie {
 	padding-bottom: 10px;
 	padding-top: 10px;
@@ -75,9 +79,8 @@
 	margin-top: 33px;
 }
 
-#ecranInformations, #ecranInformationsP {
+#ecranInformations, #ecranInformationsP, #ecranInformationsPaiement {
 	border-radius: 20px;
-	height: 600px;
 	display: block;
 	padding-top: 30px;
 	padding-bottom: 30px;
@@ -86,14 +89,17 @@
 	position: relative;
 	top: 15%;
 	background-color: #007d9ce1;
-	-webkit-box-shadow: 0px 0px 40px #00caeed7;
-	box-shadow: 0px 0px 40px #00caeed7;
+	-webkit-box-shadow: 0px 0px 19px #00caeed7;
+	box-shadow: 0px 0px 19px #00caeed7;
 	padding-left: 0%;
 	padding-right: 0px;
 	width: 95%;
 	margin-left: 3%;
 }
-
+#ecranInformationsPaiement{
+	background-color: rgb(52, 202, 114);
+}
+	
 #ecranInformationsP{
 	height: 200px;
 	padding: 100px;
