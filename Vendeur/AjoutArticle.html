@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coordonnees de livraison - ECE MarketPlace</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/style_css_base.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/style_page_acheteur.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../JS/scripte_menu_vertical.js" async></script>   
+    <script> 
+        $(function(){
+            $("#footer").load("../FilesStruc/footer.html");
+            $("#header").load("../FilesStruc/header.html");
+        });
+    </script>
+    <div id="header"></div>
+
+    <div id="enTete">
+        <div id="topEntete">
+            <a href="../PageAccueil.html"><img id="logoAccueil" src="../FIles/logo/ECEMarket_base.png"></a>
+            <div id="titrePrincipal">
+                <h2>Article</h2>
+            </div>
+        </div>
+
+        <div id="divBarreEntete">
+            <div id="barreEnteteInscription">
+                <a id="boutonConnexionA" href="Panier.html"><img id="logoCompte" src="../Files/logo/iconfinder_cart.png">Article</a>
+            </div>
+        </div>
+    </div>
+</head>
+
+<body>
+    <div id="teteBody"></div>
+    <div id="corpBody">
+        <div id="corpSite">
+            <div id="banderoleTitre"><img src="../Files/logo/iconfinder_add_article.png" alt="Image livraison" id="imgTitre"><h1>Informations article</h1></div>
+            <div id="ecranInformations">
+                <h3>Veuillez rentrez les informations de l'article :</h2>
+        
+                    <form>
+                        <div class="ligneEcran">
+                            <label class="labelCol" for="titre">Titre :</label>
+                            <input type="text" required id="titre" minlength="2" require name="titre">
+                        </div>
+        
+                        <div class="ligneEcran">
+                            <label class="labelCol" for="categorie">Catégorie :</label>
+                            <select name="categorie" id="categorie">
+                                <option value="Livre"> Livre, BD, eBooks</option>
+                                <option value="Photo"> Photo, Caméra </option>
+                                <option value="Son"> Son, Hi-fi </option>
+                                <option value="TV"> TV, Vidéo </option>
+                                <option value="Infomatique"> Informatique, Multimédia </option>
+                                <option value="SmartPhone"> SmartPhone, Téléphonie </option>
+                                <option value="Sport"> Sport, Santé </option>
+                                <option value="Soin"> Soin, Beauté </option>
+                                <option value="Bijoux"> Bijoux, Accesoires </option>
+                                <option value="Décoration"> Décoration, Maison </option>
+                                <option value="Jardin"> Jardin, Bricolage </option>
+                                </select>
+                        </div>
+        
+                        <div class="ligneEcran">
+                            <label class="labelCol" for="prix">Prix :</label>
+                            <input type="number" required id="prix" name="number">
+                        </div>
+        
+                        <div class="ligneEcran">
+                            <label class="labelCol" for="description">Description :</label>
+                            <input type="text" id="description" minlength="20" maxlength="200" require name="desciption">
+                        </div>
+        
+                        <div class="ligneEcran">
+                            <label class="labelCol" for="photo">Photo :</label>
+                            <input type="file" required id="photo">
+                        </div>
+            
+                        <button id="boutonValiation">Valider</button>
+                    </form>
+            </div>
+        </div>
+    </div>
+</body>
+<div id="footer"></div>
+</html>

@@ -22,6 +22,9 @@
 	margin-left: 6%;
 	margin-top: 51px;
 }
+#imgTitre{
+	max-width: 10%;
+}
 
 #banderoleTitre h2{
 	color: rgba(255, 0, 0, 0.589);
@@ -58,11 +61,14 @@
     padding-right: 25px;
 }
 
-#password, #mail, #name, #firstname, #pseudo,#addresse1,#addresse2,#city,#postalcode, #country, #number, #date, #securitynumber{
+#password, #mail, #name, #firstname, #pseudo,#addresse1,#addresse2,#city,#postalcode, #country, #number, #date, #securitynumber,#titre, #categorie, #description, #prix, #photo{
     border : solid #007179;
     border-radius: 10px;
     width:40%;
     height: 20px;
+}
+#description{
+    height: 80px;
 }
 #ratioLigne{
 	height: 20px;
@@ -104,9 +110,11 @@
 	padding-right: 0px;
 	width: 95%;
 	margin-left: 3%;
+	text-align: center;
 }
 #ecranInformationsPaiement{
 	background-color: rgb(52, 202, 114);
+	text-align: center;
 }
 	
 #ecranInformationsP{

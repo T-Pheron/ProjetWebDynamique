@@ -9,7 +9,12 @@
     <link rel="stylesheet" type="text/css" href="../CSS/style_page_acheteur.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="../JS/scripte_menu_vertical.js" async></script>
-
+    <script> 
+        $(function(){
+            $("#footer").load("../FilesStruc/footer.html");
+            $("#menuVertical").load("../FilesStruc/menuVertical.html"); 
+        });
+    </script>
 
     <div id="enTete">
         <div id="topEntete">
@@ -37,27 +42,13 @@
                 <a class="boutonNav" href="../PageConnexion_Vendeur.html"><img id="logoPanier" src="../files/logo/iconfinder_cart.png">Panier</a>
             </div>
         </div>
-        
-        
     </div>
 </head>
 
 <body>
     <div id="teteBody"></div>
     <div id="corpBody">
-        <div id="menuVertical">
-            <a href="../categorieLivre.html"><div>Livre, BD, eBooks<br></div></a>
-            <a href="../categoriePhoto.html"><div>Photo, Caméra<br></div></a>
-            <a href="../categorieSon.html"><div>Son, Hi-fi<br></div></a>
-            <a href="../categorieTV.html"><div>TV, Vidéo<br></div></a>
-            <a href="../categorieInformatique.html"><div>Informatique, Multimédia<br></div></a>
-            <a href="../categorieSmarthPhone.html"><div>SmartPhone, Téléphonie<br></div></a>
-            <a href="../categorieSport.html"><div>Sport<br></div></a>
-            <a href="../categorieSoin.html"><div>Soin Beauté<br></div></a>
-            <a href="../categorieBijoux.html"><div>Bijoux, Accesoires<br></div></a>
-            <a href="../categorieDecoration.html"><div>Décoration, Maison<br></div></a>
-            <a href="../categorieJardin.html"><div>Jardin, Bricolage<br></div></a>
-        </div>
+        <div id="menuVertical"></div>
         <div id="corpSite">
             <div id="banderoleTitre">
                 <h3>Confirmation de la transaction</h3>
@@ -73,12 +64,5 @@
         </div>
     </div>
 </body>
-<footer>
-    <div>
-        ©2021 @EntreprisePasCher <br> <br>
-        Alicia GHADIRZADEH <br>
-        Joé LHUERRE <br>
-        Théric PHERON
-    </div>
-</footer>
+<div id="footer"></div>
 </html>

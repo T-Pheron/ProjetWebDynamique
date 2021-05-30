@@ -4,8 +4,11 @@ html, body {
 	font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
 	justify-content: center;
 	background-color: #ffffff;
-	left: 69%;
+    height: 100%;
 	text-align: center;
+}
+body {
+	width: 100%;
 }
 #enTete{
 	position: fixed;
@@ -136,17 +139,17 @@ html, body {
     transition: width 1s, left 1s;
     position: relative;
     left: 0%;
-    overflow: hidden;
 }
 #teteBody{
     height: 115px;
 }
 #corpBody {
 	text-align: left;
-	background-color: white;
 	margin-top: -20px;
 	padding-top: 19px;
 	display: flex;
+	overflow: hidden;
+    height:auto;
 }
 #banderoleEvenement{
     height: 400px;
@@ -188,8 +191,11 @@ html, body {
 }
 
 footer{
-    background-color: #0a2e30;
-    padding: 5px;
-    height: 110px;
-    text-align:center;
+	width: 100%;
+	background-color: #0a2e30;
+    color:#99c8ca;
+	padding: 5px;
+	height: 110px;
+	text-align: center;
+	height: 100px;
 }
