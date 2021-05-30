@@ -5,6 +5,7 @@ html, body {
 	justify-content: center;
 	background-color: #ffffff;
     height: 100%;
+    width: auto;
 	text-align: center;
 }
 body {
@@ -138,6 +139,7 @@ body {
 
 #corpSite{
     width:100%;
+	min-height: 500px;
     transition: width 1s, left 1s;
     position: relative;
     left: 0%;

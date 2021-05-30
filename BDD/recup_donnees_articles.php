@@ -1,52 +1,53 @@
 <?php
-var_dump($_FILES);
-var_dump($_POST);
 //Ouverture d'une connexion à la bdd
 try{
     $objetPdo = new PDO('mysql:host=localhost;dbname=ece_market_place_bdd','root','');
 }catch(PDOException $e){
     die('Erreur: echec de la connexion à la base de données');
 }
-
-//préparation de la requete d'insertion 
-$pdoStat = $objetPdo->prepare('INSERT INTO article( titre, categorie, prix, description) VALUES (:titre, :categorie, :prix, :description)');
-if(!empty($_POST['titre'])AND !empty($_POST['categorie'])){
-    $file_name= $_FILES['fichier']['name'];
-    $file_tmp_name= $_FILES['fichier']['tmp_name'];
-    $file_dest ='../../Files/img/imgProduits/'.$file_name;
-    echo 'salut';
-}
+var_dump($_FILES);
+var_dump($_POST);
 
 
-echo $file_name;
-echo $file_tmp_name;
-echo $file_dest;
-if(!empty($_POST['titre'])AND !empty($_POST['categorie']) AND !empty($_POST['prix']) AND !empty($_POST['description'])){
-    //on lie chaque marque à une valeur
-    $pdoStat->bindValue('titre',$_POST['titre'], PDO::PARAM_STR);
-    $pdoStat->bindValue('categorie',$_POST['categorie'], PDO::PARAM_STR);
-    $pdoStat->bindValue('prix',$_POST['prix'], PDO::PARAM_STR);
-    $pdoStat->bindValue('description',$_POST['description'], PDO::PARAM_STR);
-    echo'salut';
-}
+if(!empty($_FILES)){
+    $file_name1 = $_FILES['fichier']['name'];
+    $file_extension = strrchr($file_name1,".");
 
-if(move_uploaded_file($file_name,$file_dest)){
-    echo 'fichier bien envoyé bg';
-    //excecution de la requete preparee
-    $insertIsOk = $pdoStat->execute();
+    echo 'Extention :'.$file_extension.'<br/>';
+    echo 'nom du fichier :'.$file_name1.'<br/>';
 
-    if($insertIsOk==1){
-        //header('Location: ../PageAccueil.html');
-        echo 'bien joue ca';
+    $file_tmp_name = $_FILES['fichier']['tmp_name']; 
+    $file_dest = 'img/'.$file_name1;
+
+    echo $file_dest;
+
+    $extentions_autorisees = array('.jpeg','.JPEG','.PNG','.png');
+
+    if(in_array($file_extension, $extentions_autorisees)){
+        if(move_uploaded_file($file_tmp_name,$file_dest)){
+            $pdoStat = $objetPdo->prepare('INSERT INTO article(  titre, categorie, prix, description1, file_name1 , file_url ) VALUES (:titre, :categorie, :prix, :description1, :$file_name1 ,: $file_dest)');
+            //on lie chaque marque à une valeur
+            $pdoStat->bindValue('titre',$_POST['titre'], PDO::PARAM_STR);
+            $pdoStat->bindValue('categorie',$_POST['categorie'], PDO::PARAM_STR);
+            $pdoStat->bindValue('prix',$_POST['prix'], PDO::PARAM_STR);
+            $pdoStat->bindValue('description1',$_POST['description'], PDO::PARAM_STR);
+            echo'salut<br/>';
+            //excecution de la requete preparee
+            $insertIsOk = $pdoStat->execute();
+            echo 'Fichier envoyé avec succes <br/>';
+            if($insertIsOk==1){
+                //header('Location: ../PageAccueil.html');
+                echo 'bien joue ca <br/>';
+            }
+            else {
+                //header('Location: ../annexes/ErreurInscription.html');
+                echo 'ay chaud <br/>';
+        
+            }
+        } else{
+            echo "Une erreur est survenu lors de l'envoi du fichier";
+        }
+    }else{
+    echo ' Seuls les fichiers JPEG sont autorisés';
     }
-    else {
-        //header('Location: ../annexes/ErreurInscription.html');
-        echo 'ay chaud';
-
-    }
-}else{
-    echo " ah mon gars c'est chaud";
 }
-
-?>
-

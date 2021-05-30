@@ -69,9 +69,12 @@ a{
 	padding: 20px;
 	text-align: center;
 	margin-top: 23px;
+	display: block;
+	top: auto;
 }
 #sectionInformation1{
 	height: auto;
+	overflow: auto;
 }
 #sectionInformation2{
 	margin-bottom: 200px;
@@ -85,7 +88,6 @@ a{
 }
 #informationsPersonnels{
 	float: right;
-	background-color: yellow;
 	width: 60%;
 	line-height: 22px;
 	margin-top: 29px;
@@ -94,3 +96,21 @@ a{
 	width: 150px;
 	text-align: right;
 }
+#sectionInformation2{
+	align-items: center;
+	margin-left: 18%;
+	margin-right: 18%;
+}
+#tableauDroit2{
+	width: 200px;
+	text-align: right;
+}
+
+#boutonAction{
+	height: 25px;
+	width: 150px;
+	padding-top: 5px;
+	border-radius: 10px;
+	background-color: aqua;
+}
+

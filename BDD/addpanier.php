@@ -1,14 +1,22 @@
 <?php
-    require 'header.php';
-    if(isset($_GET['id'])){
-        $cate = $BDD->query("SELECT id_article FROM article WHERE id_article = :id_article",array('id_article'=>$_GET['id_article']));
-        if(empty($cate)){
-            die('le produit nexiste pas');
-        }
-        $panier->add([$cate[0]->id_article);
-        die('le produit a bien ete ajouter au panier <a href="javascript:history:back()">retourner à la page daccueil</a>');
-    }else{
-        die('ya pas darticle qui a ete ajouter au panier');
+require 'bdd.php';
+require 'panier.php';
+$BDD = new BDD();
+$panier = new panier($BDD);
+
+$json = array('error' => true);
+
+if(isset($_GET['id_article'])) {
+    $cate = $DB->query('SELECT id_article FROM article WHERE id_article=:id_article', array('id_article' => $_GET['id_article']));
+    if(empty($cate)) {
+        $json['message'] = "Ce produit n'existe pas";
     }
-    
+    $panier->ajouter($catet[0]->id_article);
+    $json['error'] = false;
+    $json['message'] = 'Le produit a bien été ajouté à votre panier';
+}
+else {
+    $json['message'] = "Vous n'avez pas sélectionné de produit à ajouter";
+}
+echo json_encode($json);
 ?>

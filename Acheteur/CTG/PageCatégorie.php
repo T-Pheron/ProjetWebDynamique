@@ -65,8 +65,8 @@
                     <div class="divArticle">
         			<div id="photoArticle"> <a><img src='../../Files/img/photoParDefaut.jpeg'><?= $cate->photo_principal; ?></img></a></div>
         			<div id="informationsArticle">
-        				<div id="titreArticle"><a><?= $cate->titre; ?></a></div>
-        				<div id="description"><?= $cate->description; ?></div>
+        				<div id="titreArcrticle"><a><?= $cate->titre; ?></a></div>
+        				<div id="description"><?= $cate->desiption; ?></div>
         				<div id="divTypeDeVente"><a>Type de vente : <?=$cate->type_de_vente; ?></a>    </div>
         			</div>
         			<div id="validationArticle">

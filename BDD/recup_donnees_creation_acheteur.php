@@ -17,6 +17,7 @@ $pdoStat->bindValue('mdp',$_POST['mdp'], PDO::PARAM_STR);
 $insertIsOk = $pdoStat->execute();
 
 
+
 if($insertIsOk==1){
     header('Location: ../PageAccueil_Acheteur.html');
 }

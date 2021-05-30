@@ -2,5 +2,5 @@
 require '../../BDD/bdd.php';
 require '../../BDD/panier.php';
 $BDD = new BDD();
-$panier=new Panier();
+$panier=new panier($BDD);
 ?>
