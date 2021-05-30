@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coordonnees de livraison - ECE MarketPlace</title>
+    <title>Ajout article - ECE MarketPlace</title>
     <link rel="stylesheet" type="text/css" href="../CSS/style_css_base.css">
     <link rel="stylesheet" type="text/css" href="../CSS/style_page_acheteur.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -20,7 +20,7 @@
 
     <div id="enTete">
         <div id="topEntete">
-            <a href="../PageAccueil.html"><img id="logoAccueil" src="../FIles/logo/ECEMarket_base.png"></a>
+            <a href="../Vendeur/PageCompte_Vendeur.html"><img id="logoAccueil" src="../FIles/logo/ECEMarket_base.png"></a>
             <div id="titrePrincipal">
                 <h2>Article</h2>
             </div>
@@ -28,7 +28,7 @@
 
         <div id="divBarreEntete">
             <div id="barreEnteteInscription">
-                <a id="boutonConnexionA" href="Panier.html"><img id="logoCompte" src="../Files/logo/iconfinder_cart.png">Article</a>
+                <a id="boutonConnexionA" href="Panier.html"><img id="logoCompte" src="../Files/logo/iconfinder_User.png">Mon compte</a>
             </div>
         </div>
     </div>
@@ -42,7 +42,7 @@
             <div id="ecranInformations">
                 <h3>Veuillez rentrez les informations de l'article :</h2>
         
-                    <form>
+                    <form action="../BDD/recup_donnees_articles.php" method="post" enctype="multipart/form-data">
                         <div class="ligneEcran">
                             <label class="labelCol" for="titre">Titre :</label>
                             <input type="text" required id="titre" minlength="2" require name="titre">
@@ -67,20 +67,20 @@
         
                         <div class="ligneEcran">
                             <label class="labelCol" for="prix">Prix :</label>
-                            <input type="number" required id="prix" name="number">
+                            <input type="number" required id="prix" name="prix">
                         </div>
         
                         <div class="ligneEcran">
                             <label class="labelCol" for="description">Description :</label>
-                            <input type="text" id="description" minlength="20" maxlength="200" require name="desciption">
+                            <input type="text" id="description" minlength="20" maxlength="200" require name="description">
                         </div>
         
                         <div class="ligneEcran">
                             <label class="labelCol" for="photo">Photo :</label>
-                            <input type="file" required id="photo">
+                            <input type="file" accept=".jpeg" name="fichier" required id="photo">
                         </div>
             
-                        <button id="boutonValiation">Valider</button>
+                        <button type="submit" id="boutonValiation">Valider</button>
                     </form>
             </div>
         </div>

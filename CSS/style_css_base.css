@@ -9,6 +9,8 @@ html, body {
 }
 body {
 	width: 100%;
+	margin-right: auto;
+	height: auto;
 }
 #enTete{
 	position: fixed;
@@ -197,5 +199,6 @@ footer{
 	padding: 5px;
 	height: 110px;
 	text-align: center;
-	height: 100px;
+	height: 130px;
+    text-decoration: none;
 }

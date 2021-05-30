@@ -65,7 +65,7 @@
                 <?php $categorie = $BDD->query('SELECT * FROM article WHERE categorie=$_GET["categorie"] AND type_de_vente=$_GET["typeVente"]');?>  
                 <?php foreach ( $categorie as $cate):?>
                     <div class="divArticle">
-        			<div id="photoArticle"> <a><img><?= $cate->photo_principal; ?></img></a></div>
+        			<div id="photoArticle"> <a><img src='../../Files/img/photoParDefaut.jpeg'><?= $cate->photo_principal; ?></img></a></div>
         			<div id="informationsArticle">
         				<div id="titreArticle"><a><?= $cate->titre; ?></a></div>
         				<div id="description"><?= $cate->description; ?></div>

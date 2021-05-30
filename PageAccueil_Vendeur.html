@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ECE MarketPlace</title>
+    <link rel="stylesheet" type="text/css" href="CSS/style_css_base.css">
+    <link rel="stylesheet" type="text/css" href="CSS/style_page_vendeur.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="JS/scripte_menu_vertical.js" async></script>
+    <script> 
+        $(function(){
+            $("#footer").load("FilesStruc/footer.html");
+            $("#menuVertical").load("FilesStruc/menuVertical.html"); 
+        });
+    </script>
+
+
+    <div id="enTete">
+        <div id="topEntete">
+            <a href="PageAccueil_Acheteur.html"><img id="logoAccueil" src="files/logo/ECEMarket_base.png"></a>
+            <div id="barreDeRecherche">
+                <table>
+                    <tr>
+                        <td>
+                            <h4>Rechercher</h4>
+                        </td>
+                        <td>
+                            <input type="search" id="barreRecherche" name="barreRecherche">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+        <div id="divBarreEntete">
+            <div id="boutonMenu"></div>
+            <div id="barreEntete">
+                <a class="boutonNav" href="TrucpourAllerAuNotif"><img id="logoNotification" src="files/logo/notification_remind.png">Notifications</a>
+                <a class="boutonNav" href="Vendeur/PageCompte_Vendeur.html"><img id="logoCompte" src="files/logo/iconfinder_User.png">Mon compte</a>
+                <a class="boutonNav" href="Vendeur/AjoutArticle.html"><img id="logoPanier" src="files/logo/iconfinder_add_article.png">Ajouter</a>
+            </div>
+        </div>
+        
+        
+    </div>
+</head>
+
+<body>
+	<div id="teteBody"></div>
+	<div id="corpBody">
+		<div id="menuVertical"></div>
+		<div id="corpSite">
+			<div id="banderoleTitre">
+				<h2 id="titreBanderole">Accueil vendeur</h2>
+			</div>
+			<div id="divAction">
+				<div id="corpAction"> <a href="Vendeur/AjoutArticle.html">
+					<div id="divAjoutArticle"><img src="Files/logo/iconfinder_add_article.png" alt="" id="imgArticle">
+						<div>Ajouter un article</div>
+					</div>
+				</a>
+				<a href="Vendeur/AjoutArticle.html">
+					<div id="divArticlesEnVentes"><img src="Files/logo/iconfinder_market.png" alt="" id="imgArticle">
+						<div>Mes articles en vente</div>
+					</div>
+				</a>
+				<div id="divHistorique">Historique de mes ventes :</div>
+				<div id="divHistoriqueText">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+<div id="footer"></div>
+</html>
