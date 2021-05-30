@@ -1,3 +1,4 @@
+<!--Le PHP et jQuery permettent de donner des fonctionnalités aux boutons, aux entrées de nos pages web. Ils permettent de générer des messages ou des actions (passage d'une page à une autre) afin de lier les éléments, pages de notre site.-->
 <?php
 require 'bdd.php';
 require 'panier.php';

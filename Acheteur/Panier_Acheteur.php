@@ -81,7 +81,7 @@
 							</tr>
 							<tr>
 								<td id="tableauPanierDroit"><h2>Prix Total : </h2></td>
-								<td><h2>Bin calcul€</h2></td>
+								<td><h2>€</h2></td>
 							</tr>
 						</table>
 					</div>

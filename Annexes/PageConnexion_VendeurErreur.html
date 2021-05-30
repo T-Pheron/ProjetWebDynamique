@@ -7,23 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ECE MarketPlace - Connexion Vendeur</title>
     <!--Header avec notamment les références des pages liées à la page actuelle-->
-    <link rel="stylesheet" type="text/css" href="CSS/style_css_base.css">
-    <link rel="stylesheet" type="text/css" href="CSS/style_page_connexion.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/style_css_base.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/style_page_connexion.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="JS/scripte_menu_vertical.js" async></script>
+    <script src="../JS/scripte_menu_vertical.js" async></script>
     <script>
         /*Fonction qui permet de mettre les informations du footer et du menu vertical dans un fichier afin de récupérer
-                                                                        et d'afficher ces informations ultérieurement*/
+                                                                                                        et d'afficher ces informations ultérieurement*/
         $(function() {
-            $("#footer").load("FilesStruc/footer.html");
-            $("#menuVertical").load("FilesStruc/menuVertical.html");
+            $("#footer").load("../FilesStruc/footer.html");
+            $("#menuVertical").load("../FilesStruc/menuVertical.html");
         });
     </script>
 
     <div id="enTete">
         <div id="topEntete">
             <!--On insère le logo qui permet de revenir à la page principale -->
-            <a href="PageAccueil.html"><img id="logoAccueil" src="FIles/logo/ECEMarket_base.png"></a>
+            <a href="../PageAccueil.html"><img id="logoAccueil" src="../FIles/logo/ECEMarket_base.png"></a>
             <div id="barreDeRecherche">
                 <table>
                     <tr>
@@ -44,8 +44,8 @@
                 <button id="boutonMenuB">Catégories</button>
             </div>
             <div id="barreEntete">
-                <a id="boutonConnexionA" href="PageConnexion_Acheteur.html"><img id="logoCompte" src="Files/logo/iconfinder_User.png">Compte client</a>
-                <a id="boutonConnexionAd" href="PageConnexion_Admin.html"><img id="logoCompte" src="Files/logo/iconfinder_User.png">Compte administrateur</a>
+                <a id="boutonConnexionA" href="../PageConnexion_Acheteur.html"><img id="logoCompte" src="../Files/logo/iconfinder_User.png">Compte client</a>
+                <a id="boutonConnexionAd" href="../PageConnexion_Admin.html"><img id="logoCompte" src="../Files/logo/iconfinder_User.png">Compte administrateur</a>
             </div>
         </div>
     </div>
@@ -79,15 +79,16 @@
                         </div>
 
                     </form>
+                    <div id=erreur>L'identifiant ou le mot de passe est incorecte !</div>
                      <!--Redirection sur une autre page si le vendeur a oublié son mot de passe-->
                     <div id="mdpOublie">
-                        <a href="ProjetWeb_PageMotdepasseoublie_v1.html">mot de passe oublié ?</a>
+                        <a href="MDPOublie">mot de passe oublié ?</a>
                     </div>
                     <div id="ou">
                         <p>ou</p>
                     </div>
                      <!--Bouton permettant au vendeur de rejoindre la page de création d'un compte vendeur-->
-                    <a href="PageCréation_Vendeur.html" id="boutonCreationCompte">Créer mon compte vendeur</a>
+                    <a href="../PageCréation_Vendeur.html" id="boutonCreationCompte">Créer mon compte vendeur</a>
             </div>
         </div>
     </div>

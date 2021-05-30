@@ -1,7 +1,20 @@
+/*CSS permet de mettre en forme notre page web :
+margin permet de gérer les marges, l'espacement entre les éléments de la page et les éléments à l'extérieur d'eux
+padding permet de gérer l'espacement à l'intérieur d'un élément, objet
+background-color permet de colorer les éléments de la page
+height permet de définir une hauteur à l'élément
+font-size ou font-family précisent les hauteurs du texte et la police
+width contrôle la largeur des éléments
+text-align aligne le texte selon une position choisie (centrée, à gauche)
+z-index : permet de définir les priorités d'affichage des éléments
+border ou color permet de donner une forme définie à un contour d'élément ou une couleur à un élément*/
+
 html,
 body {
     margin: 0px;
-    padding: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
     font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
     justify-content: center;
     background-color: #ffffff;
@@ -220,10 +233,10 @@ body {
 }
 
 #actualites {
-    background-color:white;
-    padding: 5px;
-    height: 500px;
+    background-color: white;
+    min-height: 500px;
     text-align: center;
+    overflow: hidden;
 }
 
 footer {
@@ -240,19 +253,59 @@ footer {
 
 /*Actualité*/
 
+#sectionActualité {
+    display: block;
+}
+
 #titreActualité {
-    height: 20px;
+    height: 30px;
     width: 100%;
-    padding: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    background-color: rgba(14, 129, 201, 1.00);
+    margin-top: -5px;
+    color: rgba(255, 255, 255, 1.00);
+    font-weight: bold;
+    text-indent: 31px;
+    font-size: 22px;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 1.00);
 }
 
 #sectionAffichage {
     display: flex;
-    height: 100px;
+    height: 150px;
+    margin-bottom: 150px;
 }
 
 #sectionAffichageArticle {
     width: 20%;
     border-radius: 5px;
-    background-color:#99c8ca;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 5px 1px #000000;
+    box-shadow: -0px 0px 5px 1px #000000;
+    min-height: 100%;
+    margin: 40px;
+    margin-right: 0px;
+}
+
+#sectionAffichageArticle img {
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#titreArticle {
+    background-color: white;
+    height: 40px;
+    padding: 10px;
+}
+
+#erreur {
+    color: red;
+    font-size: 12px;
+    padding-top: 15px;
+    padding-left: 25%;
 }

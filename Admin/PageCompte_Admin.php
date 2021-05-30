@@ -6,9 +6,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Mon compte - ECE MarketPlace</title>
+    <title>ECE MarketPlace</title>
     <link rel="stylesheet" type="text/css" href="../CSS/style_css_base.css">
-    <link rel="stylesheet" type="text/css" href="../CSS/style_page_acheteur.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/style_page_admin.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="../JS/scripte_menu_vertical.js" async></script>
     <script> 
@@ -21,7 +21,7 @@
 
     <div id="enTete">
         <div id="topEntete">
-            <a href="../PageAccueil_Acheteur.html"><img id="logoAccueil" src="../files/logo/ECEMarket_base.png"></a>
+            <a href="../PageAccueil_Vendeur.html"><img id="logoAccueil" src="../files/logo/ECEMarket_base.png"></a>
             <div id="barreDeRecherche">
                 <table>
                     <tr>
@@ -41,10 +41,12 @@
                 <button id="boutonMenuB">Catégories</button>
             </div>
             <div id="barreEntete">
-                <a class="boutonNav" href="Notification.html"><img id="logoNotification" src="../Files/logo/notification_remind.png">Notifications</a>
-                <a class="boutonNav" href="Panier_Acheteur.html"><img id="logoPanier" src="../Files/logo/iconfinder_cart.png">Panier</a>
+                <a class="boutonNav" href="TrucpourAllerAuNotif"><img id="logoNotification" src="../files/logo/notification_remind.png">Notifications</a>
+                <a class="boutonNav" href="TrucAMettre"><img id="logoAjouter" src="../files/logo/iconfinder_wait-time.png">En attente</a>
             </div>
         </div>
+        
+        
     </div>
 </head>
 
@@ -52,7 +54,7 @@
 	<div id="teteBody"></div>
 	<div id="corpBody">
 		<div id="menuVertical"></div>
-		<div id="corpSite1">
+		<div id="corpSite">
 			<div id="banderoleTitreCompte"><h2>Mon compte</h2></div>
 			<div id="divInformation">
 				<div id="sectionInformation">
@@ -60,7 +62,7 @@
 						<h3>Mes informations :</h3>
 					</div>
 					<div id="sectionInformation1">
-						<div id="pp"><img src="../Files/img/photoProfilParDefaut.jpeg"></div>
+						<div id="pp">PP</div>
 						<div id="informationsPersonnels">
 							<table>
 								<tr>
@@ -83,7 +85,7 @@
 						</div>
 					</div>
 					<div class="mesInformations1">
-						<h3>Mes informations confidentielles et design</h3>
+						<h3>Mes informations confidentiels et design</h3>
 					</div>
 					<div id="sectionInformation2">
 						<table>

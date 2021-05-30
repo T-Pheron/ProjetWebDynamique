@@ -1,95 +1,113 @@
-#divTitreCategorie{
-	background-color: rgba(201,52,55,1.00);
-	padding-top: 1px;
-	padding-bottom: 1px;
-	color: white;
-	padding-left: 3%;
-}
-.divArticle{
-	background-color: blue;
-	width: 80%;
-	height: 135px;
-	overflow: hidden;
-	margin-left: 10%;
-	display: flex;
-}
-.divArticle #photoArticle{
-	float: left;
-	height: 135px;
-	width: 20%;
-	overflow: hidden;
-}
-.divArticle #informationsArticle{
-	width: 80%;
-}
-.divArticle #validationArticle{
-	width: 10%;
+/*CSS permet de mettre en forme notre page web :
+margin permet de gérer les marges, l'espacement entre les éléments de la page et les éléments à l'extérieur d'eux
+padding permet de gérer l'espacement à l'intérieur d'un élément, objet
+background-color permet de colorer les éléments de la page
+height permet de définir une hauteur à l'élément
+font-size ou font-family précisent les hauteurs du texte et la police
+width contrôle la largeur des éléments
+text-align aligne le texte selon une position choisie (centrée, à gauche)
+z-index : permet de définir les priorités d'affichage des éléments
+border ou color permet de donner une forme définie à un contour d'élément ou une couleur à un élément*/
+
+#divTitreCategorie {
+    background-color: rgba(201, 52, 55, 1.00);
+    padding-top: 1px;
+    padding-bottom: 1px;
+    color: white;
+    padding-left: 3%;
 }
 
-.divArticle #titreArticle{
-	background-color: red;
-	height: 32px;
-	text-align: left;
-	text-indent: 20px;
-	color: rgba(0,0,0,1.00);
-	font-size: 18px;
-	line-height: 33px;
-	font-weight: bold;
-}
-.divArticle #description{
-	background-color: yellow;
-	height: 65px;
-	text-align: left;
-	text-indent: 28px;
-	color: rgba(0,0,0,1.00);
-	font-size: 12px;
-	font-weight: normal;
-	padding-top: 10px;
-}
-.divArticle #divTypeDeVente{
-	background-color: cadetblue;
-	height: 20px;
-	text-align: left;
-	text-indent: 28px;
-	color: rgba(82,82,82,1.00);
-	font-size: 12px;
-	font-weight: normal;
-	padding-top: 10px;
+.divArticle {
+    background-color: blue;
+    width: 80%;
+    height: 135px;
+    overflow: hidden;
+    margin-left: 10%;
+    display: flex;
 }
 
-.divArticle #divPrix{
-	background-color: green;
-	height: 32px;
-	text-align: center;
-	color: rgba(0,0,0,1.00);
-	font-size: 18px;
-	line-height: 33px;
-	font-weight: normal;
-}
-.divArticle #divPanier{
-	background-color: green;
-	text-align: center;
-	color: rgba(0,0,0,1.00);
-	font-size: 18px;
-	line-height: 33px;
-	font-weight: normal;
-	height: auto;
-	margin-top: 20%;
+.divArticle #photoArticle {
+    float: left;
+    height: 135px;
+    width: 20%;
+    overflow: hidden;
 }
 
-.divArticle #divPanier img{
-	max-width: 40%;
-	max-height: 40%;
+.divArticle #informationsArticle {
+    width: 80%;
 }
 
-#banderoleBouton{
-	display: flex;
-	padding: 10px;
-	background-color:brown;
+.divArticle #validationArticle {
+    width: 10%;
 }
 
-#boutonTrier{
-	min-width: 40px;
-	min-width: 10px;
-	background-color: red;
+.divArticle #titreArticle {
+    background-color: red;
+    height: 32px;
+    text-align: left;
+    text-indent: 20px;
+    color: rgba(0, 0, 0, 1.00);
+    font-size: 18px;
+    line-height: 33px;
+    font-weight: bold;
+}
+
+.divArticle #description {
+    background-color: yellow;
+    height: 65px;
+    text-align: left;
+    text-indent: 28px;
+    color: rgba(0, 0, 0, 1.00);
+    font-size: 12px;
+    font-weight: normal;
+    padding-top: 10px;
+}
+
+.divArticle #divTypeDeVente {
+    background-color: cadetblue;
+    height: 20px;
+    text-align: left;
+    text-indent: 28px;
+    color: rgba(82, 82, 82, 1.00);
+    font-size: 12px;
+    font-weight: normal;
+    padding-top: 10px;
+}
+
+.divArticle #divPrix {
+    background-color: green;
+    height: 32px;
+    text-align: center;
+    color: rgba(0, 0, 0, 1.00);
+    font-size: 18px;
+    line-height: 33px;
+    font-weight: normal;
+}
+
+.divArticle #divPanier {
+    background-color: green;
+    text-align: center;
+    color: rgba(0, 0, 0, 1.00);
+    font-size: 18px;
+    line-height: 33px;
+    font-weight: normal;
+    height: auto;
+    margin-top: 20%;
+}
+
+.divArticle #divPanier img {
+    max-width: 40%;
+    max-height: 40%;
+}
+
+#banderoleBouton {
+    display: flex;
+    padding: 10px;
+    background-color: brown;
+}
+
+#boutonTrier {
+    min-width: 40px;
+    min-width: 10px;
+    background-color: red;
 }

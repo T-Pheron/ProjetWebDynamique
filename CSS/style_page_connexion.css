@@ -1,26 +1,41 @@
-#banderoleTitreAd, #banderoleTitreA, #banderoleTitreV{
+/*CSS permet de mettre en forme notre page web :
+margin permet de gérer les marges, l'espacement entre les éléments de la page et les éléments à l'extérieur d'eux
+padding permet de gérer l'espacement à l'intérieur d'un élément, objet
+background-color permet de colorer les éléments de la page
+height permet de définir une hauteur à l'élément
+font-size ou font-family précisent les hauteurs du texte et la police
+width contrôle la largeur des éléments
+text-align aligne le texte selon une position choisie (centrée, à gauche)
+z-index : permet de définir les priorités d'affichage des éléments
+border ou color permet de donner une forme définie à un contour d'élément ou une couleur à un élément*/
+
+#banderoleTitreAd,
+#banderoleTitreA,
+#banderoleTitreV {
     text-align: center;
     border: 0px;
     padding-top: 13%;
     margin: 0px;
     float: left;
-    height:87%;
+    height: 87%;
+}
 
-}
-#banderoleTitreAd{
+#banderoleTitreAd {
     background-color: rgba(255, 0, 0, 0.678);
-	-webkit-box-shadow: 0px 0px 40px #FF5D5D;
-	box-shadow: 0px 0px 40px #FF5D5D;
+    -webkit-box-shadow: 0px 0px 40px #FF5D5D;
+    box-shadow: 0px 0px 40px #FF5D5D;
 }
-#banderoleTitreA{
+
+#banderoleTitreA {
     background-color: #009494d7;
-	-webkit-box-shadow: 0px 0px 40px #00b698d7;
-	box-shadow: 0px 0px 40px #00b698d7;
+    -webkit-box-shadow: 0px 0px 40px #00b698d7;
+    box-shadow: 0px 0px 40px #00b698d7;
 }
-#banderoleTitreV{
+
+#banderoleTitreV {
     background-color: #007d9ce1;
-	-webkit-box-shadow: 0px 0px 40px #00caeed7;
-	box-shadow: 0px 0px 40px #00caeed7;
+    -webkit-box-shadow: 0px 0px 40px #00caeed7;
+    box-shadow: 0px 0px 40px #00caeed7;
 }
 
 h1 {
@@ -30,9 +45,9 @@ h1 {
 }
 
 h3 {
-	padding: 20px;
-	color: black;
-	text-align: center;
+    padding: 20px;
+    color: black;
+    text-align: center;
     font-size: 18px;
 }
 
@@ -48,26 +63,31 @@ h3 {
     padding-right: 25px;
 }
 
-#password, #mail, #name, #firstname, #pseudo{
-    border : solid #007179;
+#password,
+#mail,
+#name,
+#firstname,
+#pseudo {
+    border: solid #007179;
     border-radius: 10px;
-    width:40%;
-    height: 20  px;
+    width: 40%;
+    height: 20 px;
 }
 
 #mdpOublie {
-	padding-bottom: 10px;
-	padding-top: 10px;
-	text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
 }
 
 #ou {
     text-align: center;
 }
 
-#boutonCreationCompte, #boutonConnexion{
+#boutonCreationCompte,
+#boutonConnexion {
     text-align: center;
-    border : solid #007179;
+    border: solid #007179;
     border-radius: 50px;
     height: 30px;
     width: 230px;
@@ -77,41 +97,47 @@ h3 {
     margin-left: auto;
     margin-right: auto;
 }
-#boutonCreationCompte{
-	height: 16px;
-	width: 210px;
-	background-color: #0395a034;
-	text-decoration: none;
-	font-size: 12px;
+
+#boutonCreationCompte {
+    height: 16px;
+    width: 210px;
+    background-color: #0395a034;
+    text-decoration: none;
+    font-size: 12px;
 }
 
-#ecranConnexionAd,#ecranConnexionA,#ecranConnexionV {
-	border-radius: 20px;
-	width: 50%;
-	height: 332px;
-	display: block;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	margin-left: auto;
-	margin-right: 23%;
-	margin-bottom: 150px;
-	margin-top: -7px;
-	position: relative;
-	top: 15%;
-	left: 15%;
+#ecranConnexionAd,
+#ecranConnexionA,
+#ecranConnexionV {
+    border-radius: 20px;
+    width: 50%;
+    height: 332px;
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: auto;
+    margin-right: 23%;
+    margin-bottom: 150px;
+    margin-top: -7px;
+    position: relative;
+    top: 15%;
+    left: 15%;
 }
-#ecranConnexionAd{
+
+#ecranConnexionAd {
     background-color: rgba(255, 0, 0, 0.637);
-	-webkit-box-shadow: 0px 0px 40px #FF5D5D;
-	box-shadow: 0px 0px 40px #FF5D5D;
+    -webkit-box-shadow: 0px 0px 40px #FF5D5D;
+    box-shadow: 0px 0px 40px #FF5D5D;
 }
-#ecranConnexionA{
+
+#ecranConnexionA {
     background-color: #009494d7;
-	-webkit-box-shadow: 0px 0px 40px #00b698d7;
-	box-shadow: 0px 0px 40px #00b698d7;
+    -webkit-box-shadow: 0px 0px 40px #00b698d7;
+    box-shadow: 0px 0px 40px #00b698d7;
 }
-#ecranConnexionV{
+
+#ecranConnexionV {
     background-color: #007d9ce1;
     -webkit-box-shadow: 0px 0px 40px #00caeed7;
-	box-shadow: 0px 0px 40px #00caeed7;
+    box-shadow: 0px 0px 40px #00caeed7;
 }

@@ -1,4 +1,5 @@
 <?php
+
 class BDD{
     private $host = 'localhost';
     private $username = 'root';

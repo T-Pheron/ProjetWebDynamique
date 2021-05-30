@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Header avec notamment les références des pages liées à la page actuelle-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paiement - ECE MarketPlace</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/style_css_base.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/style_page_acheteur.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../JS/scripte_menu_vertical.js" async></script>
+    <script>
+        /*Fonction qui permet de mettre les informations du footer dans un fichier afin de récupérer et d'afficher ces informations ultérieurement*/
+        $(function() {
+            $("#footer").load("../FilesStruc/footer.html");
+        });
+    </script>
+
+    <div id="enTete">
+        <div id="topEntete">
+            <!--On insère le logo dans le header de la page en informant son lieu de stockage-->
+            <a href="../PageAccueil.html"><img id="logoAccueil" src="../FIles/logo/ECEMarket_base.png"></a>
+            <div id="titrePrincipal">
+                <h2>&nbsp;</h2>
+            </div>
+        </div>
+
+        <div id="divBarreEntete">
+            <div id="barreEnteteInscription">
+                <!--On insère le bouton panier de l'acheteur-->
+                <a id="boutonConnexionA" href="Panier_Acheteur.html"><img id="logoCompte" src="../Files/logo/iconfinder_cart.png">Panier</a>
+            </div>
+        </div>
+    </div>
+</head>
+
+<body>
+    Notification&nbsp;&nbsp; Notificatio&nbsp;&nbsp; &nbsp;
+    <div id="teteBody"></div>
+    <div id="corpBody">
+        <div id="corpSite">
+            <div id="banderoleTitre"><img src="../Files/logo/iconfinder_creditcard.png" alt="Carte de crédit">
+                <h1>Notification&nbsp;</h1>
+            </div>
+            <div id="ecranInformationsPaiement">
+                <h3>Rempliser se formulaire pour recevoir les dernières actualitées d'une&nbsp; catégorie&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h3>
+                <!--On affiche un formulaire contenant des descriptions suivies d'entrées pour permettre à l'acheteur de renseigner
+                ses informations de paiement (montant à payer, mode de paiement, numéro de carte, nom affiché sur la carte,
+                date d'expiration et code de sécurité)-->
+                <form>
+                    <div class="ligneEcran">
+                        <label class="labelCol" for="amount">Adresse mail:</label>
+                        <input type="number" id="number">
+                    </div>
+
+                    <div class="ligneEcran">
+                        <label class="labelCol" for="cardtype">Fréquence:</label>
+                        <table id="ratioLigne">
+                            <td>
+                                <input type="radio" name="creditCard" value="MatserCard"> Journalier <br>
+                                <input type="radio" name="creditCard" value="Visa"> Hebdomadaire
+                                <br>
+                                <input type="radio" name="creditCard" value="AmericanExpress"> Mensue&nbsp; </td>
+                        </table>
+                    </div>
+                    <div class="ligneEcran">
+                        <label class="labelCol" for="categorie">Catégorie :</label>
+                        <select name="categorie" id="categorie">
+                                <option value="Livre"> Livre, BD, eBooks</option>
+                                <option value="Photo"> Photo, Caméra </option>
+                                <option value="Son"> Son, Hi-fi </option>
+                                <option value="TV"> TV, Vidéo </option>
+                                <option value="Infomatique"> Informatique, Multimédia </option>
+                                <option value="SmartPhone"> SmartPhone, Téléphonie </option>
+                                <option value="Sport"> Sport, Santé </option>
+                                <option value="Soin"> Soin, Beauté </option>
+                                <option value="Bijoux"> Bijoux, Accesoires </option>
+                                <option value="Décoration"> Décoration, Maison </option>
+                                <option value="Jardin"> Jardin, Bricolage </option>
+                      </select>
+                    </div>
+
+                    <!--On insère le bouton de validation du formulaire-->
+                    <button id="boutonValiation">Valider</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</body>
+<div id="footer"></div>
+
+</html>

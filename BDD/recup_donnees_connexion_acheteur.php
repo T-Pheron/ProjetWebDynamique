@@ -19,14 +19,6 @@
       {
         if($mdp === $res['mdp'] && $mail === $res['mail'])
         {
-            $id_acheteur=NULL;
-            session_start();
-            $req = $bdd->prepare('SELECT id_acheteur FROM acheteur WHERE mail = :mail AND mdp = :mdp');
-            $req->execute(array(':id_acheteur'=>$id_acheteur));
-            $res = $req->fetch();
-
-            $_SESSION['id_acheteur']=$res;
-            echo  $_SESSION['id_acheteur'];
             header('Location: ../PageAccueil_Acheteur.html');
         }
         else
@@ -37,8 +29,7 @@
    }
    else
    {
-       //renvoi du formulaire
-       echo 'Votre mail ou mot de passe est incorrect';
+    header('Location: ../Annexes/PageAccueil_VendeurErreur.html');
         
    }
 }

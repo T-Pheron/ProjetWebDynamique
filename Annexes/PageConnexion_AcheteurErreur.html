@@ -7,16 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ECE MarketPlace - Connexion Acheteur</title>
     <!--Header avec notamment les références des pages liées à la page actuelle-->
-    <link rel="stylesheet" type="text/css" href="CSS/style_css_base.css">
-    <link rel="stylesheet" type="text/css" href="CSS/style_page_connexion.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/style_css_base.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/style_page_connexion.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="JS/scripte_menu_vertical.js" async></script>
+    <script src="../JS/scripte_menu_vertical.js" async></script>
     <script>
         /*Fonction qui permet de mettre les informations du footer et du menu vertical dans un fichier afin de récupérer
-                                                                et d'afficher ces informations ultérieurement*/
+                                                                                                                                                et d'afficher ces informations ultérieurement*/
         $(function() {
-            $("#footer").load("FilesStruc/footer.html");
-            $("#menuVertical").load("FilesStruc/menuVertical.html");
+            $("#footer").load("../FilesStruc/footer.html");
+            $("#menuVertical").load("../FilesStruc/menuVertical.html");
         });
     </script>
 
@@ -24,7 +24,7 @@
     <div id="enTete">
         <div id="topEntete">
             <!--On insère le logo qui permet de revenir à la page principale -->
-            <a href="PageAccueil.html"><img id="logoAccueil" src="FIles/logo/ECEMarket_base.png"></a>
+            <a href="../PageAccueil.html"><img id="logoAccueil" src="../FIles/logo/ECEMarket_base.png"></a>
             <div id="barreDeRecherche">
                 <table>
                     <tr>
@@ -45,8 +45,8 @@
                 <button id="boutonMenuB">Catégories</button>
             </div>
             <div id="barreEntete">
-                <a id="boutonConnexionAd" href="PageConnexion_Admin.html"><img id="logoCompte" src="Files/logo/iconfinder_User.png">Compte administrateur</a>
-                <a id="boutonConnexionV" href="PageConnexion_Vendeur.html"><img id="logoCompte" src="Files/logo/iconfinder_User.png">Compte Vendeur</a>
+                <a id="boutonConnexionAd" href="../PageConnexion_Admin.html"><img id="logoCompte" src="../Files/logo/iconfinder_User.png">Compte administrateur</a>
+                <a id="boutonConnexionV" href="../PageConnexion_Vendeur.html"><img id="logoCompte" src="../Files/logo/iconfinder_User.png">Compte Vendeur</a>
             </div>
         </div>
     </div>
@@ -63,7 +63,7 @@
             <div id="ecranConnexionA">
                 <h3>Se connecter avec mon compte client ECE MarketPlace.</h2>
                     <!--On affiche un formulaire demandant à l'acheteur de saisir son e-mail et son mot de passe afin qu'il puisse se connecter à son compte-->
-                    <form action="BDD\recup_donnees_connexion_acheteur.php" method="post">
+                    <form action="../BDD/recup_donnees_connexion_acheteur.php" method="post">
                         <div class="ligneEcran">
                             <label class="labelCol" for="mail">Email :</label>
                             <input type="text" id="mail" name="mail"></td>
@@ -79,14 +79,15 @@
                         </div>
                     </form>
                     <!--Redirection sur une autre page si le client a oublié son mot de passe-->
+                    <div id=erreur>L'identifiant ou le mot de passe est incorecte !</div>
                     <div id="mdpOublie">
-                        <a href="ProjetWeb_PageMotdepasseoublie_v1.html">mot de passe oublié ?</a>
+                        <a href="MDPOublié">mot de passe oublié ?</a>
                     </div>
                     <div id="ou">
                         <p>ou</p>
                         <!--Bouton permettant au client de rejoindre la page de création d'un compte client-->
                     </div>
-                    <a href="PageCréation_Acheteur.html" id="boutonCreationCompte">Créer mon compte client</a>
+                    <a href="../PageCréation_Acheteur.html" id="boutonCreationCompte">Créer mon compte client</a>
             </div>
         </div>
     </div>

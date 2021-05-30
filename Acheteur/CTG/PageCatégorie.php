@@ -98,8 +98,9 @@
                 </div>
             </div>
         	<div id="corpsArticles">
-                <?php $categorie = $BDD->query('SELECT * FROM article WHERE categorie=$_GET["categorie"] ');?>  
-                <?php foreach ( $categorie as $cate):?>
+                <?php $actegorieC=$_GET['categorie'];
+                    $categorie = $BDD->query("SELECT * FROM article WHERE categorie='$categorieC' ");
+                    foreach ( $categorie as $cate):?>
                     <div class="divArticle">
         			<div id="photoArticle"> <a><img src='../../Files/img/photoArticleParDefaut.jpeg'><?= $cate->photo_principal; ?></img></a></div>
         			<div id="informationsArticle">

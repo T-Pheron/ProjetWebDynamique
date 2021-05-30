@@ -6,18 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ECE MarketPlace</title>
+    <!--Header avec notamment les références des pages liées à la page actuelle-->
     <link rel="stylesheet" type="text/css" href="CSS/style_css_base.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="JS/scripte_menu_vertical.js" async></script>
     <script>
+        /*Fonction qui permet de mettre les informations du footer et du menu vertical dans un fichier afin de récupérer et d'afficher ces informations ultérieurement*/
         $(function() {
             $("#footer").load("FilesStruc/footer.html");
             $("#menuVertical").load("FilesStruc/menuVertical.html");
+            $("#actualites").load("FilesStruc/actualite.html");
         });
     </script>
 
     <div id="enTete">
         <div id="topEntete">
+            <!--On insère le logo qui permet de revenir à la page principale -->
             <a href="PageAccueil.html"><img id="logoAccueil" src="files/logo/ECEMarket_base.png"></a>
             <div id="barreDeRecherche">
                 <table>
@@ -25,6 +29,7 @@
                         <td>
                             <h4>Rechercher</h4>
                         </td>
+                        <!--On insère la barre de recherche-->
                         <td>
                             <input type="search" id="barreRecherche" name="barreRecherche">
                         </td>
@@ -32,7 +37,7 @@
                 </table>
             </div>
         </div>
-
+        <!--On insère les boutons d'accès aux catégories d'articles, au panier et à l'onglet compte-->
         <div id="divBarreEntete">
             <div id="boutonMenu">
                 <button id="boutonMenuB">Catégories</button>
@@ -53,23 +58,14 @@
         <div id="menuVertical"></div>
         <div id="corpSite">
             <div id="banderoleEvenement">
+                <!--On insère la banderole avec les évènements-->
                 <div class="imageBanderoleEvenement">
                     <a href=""><img src="files/img/2000x-_MEG__FD_2021.png" alt="Annonce1"></a>
                     <a href=""><img src="files/img/2000x-_MEG_Crew-X-Abritel_v2.jpg" alt="Annonce1"></a>
                     <a href=""><img src="files/img/2000x-_MEG_FDM.jpg" alt="Annonce1"></a>
                 </div>
             </div>
-            <div id="actualites">
-                <div id="sectionActualité">
-                    <div id="titreActualité"> Les best seller du momen</div>
-                    <div id="sectionAffichage">
-                        <div id="sectionAffichageArticle">
-                            <img src="Files/img/imgProduits/photoArticleParDefaut.jpeg.png" alt="photoArticle">
-                            <div id="titreArticle"> Le titre de l'article</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div id="actualites"></div>
         </div>
     </div>
 </body>

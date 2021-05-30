@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 //Ouverture d'une connexion à la bdd
 $objetPdo = new PDO('mysql:host=localhost;dbname=ece_market_place_bdd','root','');
@@ -18,7 +19,7 @@ $insertIsOk = $pdoStat->execute();
 
 
 if($insertIsOk==1){
-    session_start();
+    
     echo $_SESSION["nom"]=$_POST['nom'];
     echo $_SESSION["prenom"]=$_POST['prenom'];
     echo $_SESSION["pseudo"]=$_POST['pseudo'];
@@ -27,6 +28,6 @@ if($insertIsOk==1){
     header('Location: ../PageAccueil_Admin.html');
 }
 else {
-    header('Location:../annexes/ErreurInscription.html'); 
+    echo 'Erreur de création de votre profil dans la base de données';
 }
 ?>

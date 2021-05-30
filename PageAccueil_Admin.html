@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ECE MarketPlace</title>
+    <!--Header avec notamment les références des pages liées à la page actuelle-->
     <link rel="stylesheet" type="text/css" href="CSS/style_css_base.css">
     <link rel="stylesheet" type="text/css" href="CSS/style_page_admin.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="JS/scripte_menu_vertical.js" async></script>
-    <script> 
-        $(function(){
+    <script>
+        /*Fonction qui permet de mettre les informations du footer et du menu vertical dans un fichier afin de récupérer
+                                                                        et d'afficher ces informations ultérieurement*/
+        $(function() {
             $("#footer").load("FilesStruc/footer.html");
-            $("#menuVertical").load("FilesStruc/menuVertical.html"); 
+            $("#menuVertical").load("FilesStruc/menuVertical.html");
         });
     </script>
 
 
     <div id="enTete">
         <div id="topEntete">
+            <!--On insère le logo qui permet de revenir à la page principale -->
             <a href="PageAccueil_Acheteur.html"><img id="logoAccueil" src="files/logo/ECEMarket_base.png"></a>
             <div id="barreDeRecherche">
                 <table>
@@ -26,6 +31,7 @@
                         <td>
                             <h4>Rechercher</h4>
                         </td>
+                        <!--On insère la barre de recherche-->
                         <td>
                             <input type="search" id="barreRecherche" name="barreRecherche">
                         </td>
@@ -33,7 +39,7 @@
                 </table>
             </div>
         </div>
-        
+        <!--On insère les boutons d'accès aux catégories d'articles, au panier et au compte-->
         <div id="divBarreEntete">
             <div id="boutonMenu"></div>
             <div id="barreEntete">
@@ -42,42 +48,44 @@
                 <a class="boutonNav" href="TrucPourAttente"><img id="logoAttente" src="files/logo/iconfinder_wait-time.png">En attente</a>
             </div>
         </div>
-        
-        
+
+
     </div>
 </head>
 
 <body>
-	<div id="teteBody"></div>
-	<div id="corpBody">
-		<div id="menuVertical"></div>
-		<div id="corpSite">
-			<div id="banderoleTitre">
-				<h2 id="titreBanderole">Accueil adminidtrateur</h2>
-			</div>
-			<div id="divAction">
-				<div id="corpAction"> <a href="Ou on doit aller">
-					<div id="divOperation"><img src="Files/logo/iconfinder_wait-time.png" alt="imageWait" id="imgArticle">
-						<div>Opération en attente de validation</div>
-					</div>
-				</a>
-                <a href="Vendeur/AjoutArticle.html">
-					<div id="divAjoutArticle"><img src="Files/logo/iconfinder_add_article.png" alt="ImageArticle" id="imgArticle">
-						<div>Ajouter un article</div>
-					</div>
-				</a>
-				<a href="Vendeur/AjoutArticle.html">
-					<div id="divArticlesEnVentes"><img src="Files/logo/iconfinder_market.png" alt="ImageAjoutArticle" id="imgArticle">
-						<div>Mes articles en vente</div>
-					</div>
-				</a>
-				<div id="divHistorique">Historique de mes ventes :</div>
-				<div id="divHistoriqueText">
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+    <div id="teteBody"></div>
+    <div id="corpBody">
+        <div id="menuVertical"></div>
+        <div id="corpSite">
+            <div id="banderoleTitre">
+                <h2 id="titreBanderole">Accueil administrateur</h2>
+            </div>
+            <div id="divAction">
+                <div id="corpAction">
+                    <a href="Ou on doit aller">
+                        <div id="divOperation"><img src="Files/logo/iconfinder_wait-time.png" alt="imageWait" id="imgArticle">
+                            <div>Opération en attente de validation</div>
+                        </div>
+                    </a>
+                    <a href="Vendeur/AjoutArticle.html">
+                        <div id="divAjoutArticle"><img src="Files/logo/iconfinder_add_article.png" alt="ImageArticle" id="imgArticle">
+                            <div>Ajouter un article</div>
+                        </div>
+                    </a>
+                    <a href="Vendeur/AjoutArticle.html">
+                        <div id="divArticlesEnVentes"><img src="Files/logo/iconfinder_market.png" alt="ImageAjoutArticle" id="imgArticle">
+                            <div>Mes articles en vente</div>
+                        </div>
+                    </a>
+                    <div id="divHistorique">Historique de mes ventes :</div>
+                    <div id="divHistoriqueText">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 <div id="footer"></div>
+
 </html>

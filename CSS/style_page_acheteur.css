@@ -1,46 +1,60 @@
-#corpSite{
-	width: 100%;
-	min-height: 500px;
-	transition: width 1s, left 1s;
-	position: relative;
-	overflow: hidden;
-	margin-left: 10%;
-	margin-right: 10%;
-	margin-bottom: 10%;
-}
-#corpSite1{
-	width: 100%;
-	min-height: 489px;	
-	transition: width 1s, left 1s;
-	position: relative;
-	overflow: hidden;
+/*CSS permet de mettre en forme notre page web :
+margin permet de gérer les marges, l'espacement entre les éléments de la page et les éléments à l'extérieur d'eux
+padding permet de gérer l'espacement à l'intérieur d'un élément, objet
+background-color permet de colorer les éléments de la page
+height permet de définir une hauteur à l'élément
+font-size ou font-family précisent les hauteurs du texte et la police
+width contrôle la largeur des éléments
+text-align aligne le texte selon une position choisie (centrée, à gauche)
+z-index : permet de définir les priorités d'affichage des éléments
+border ou color permet de donner une forme définie à un contour d'élément ou une couleur à un élément*/
+
+#corpSite {
+    width: 100%;
+    min-height: 500px;
+    transition: width 1s, left 1s;
+    position: relative;
+    overflow: hidden;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
 }
 
-#banderoleTitre{
-	text-align: center;
-	border: 0px;
-	height: 25px;
-	padding-top: 1%;
-	padding-bottom: 5%;
-	border-radius: 20px;
-	background-color: #004455e1;
-	-webkit-box-shadow: 0px 0px 40px #00caeed7;
-	box-shadow: 0px 0px 40px #00caeed7;
-	width: 90%;
-	margin-left: 6%;
-	margin-top: 51px;
-}
-#imgTitre{
-	max-width: 10%;
+#corpSite1 {
+    width: 100%;
+    min-height: 489px;
+    transition: width 1s, left 1s;
+    position: relative;
+    overflow: hidden;
 }
 
-#banderoleTitre h2{
-	color: rgba(255, 0, 0, 0.589);
-	font-size: 30px;
+#banderoleTitre {
+    text-align: center;
+    border: 0px;
+    height: 25px;
+    padding-top: 1%;
+    padding-bottom: 5%;
+    border-radius: 20px;
+    background-color: #004455e1;
+    -webkit-box-shadow: 0px 0px 40px #00caeed7;
+    box-shadow: 0px 0px 40px #00caeed7;
+    width: 90%;
+    margin-left: 6%;
+    margin-top: 51px;
 }
-#banderoleTitre h3{
-	color: white;
-	font-size: 30px;
+
+#imgTitre {
+    max-width: 10%;
+}
+
+#banderoleTitre h2 {
+    color: rgba(255, 0, 0, 0.589);
+    font-size: 30px;
+}
+
+#banderoleTitre h3 {
+    color: white;
+    font-size: 30px;
 }
 
 .indent {
@@ -50,16 +64,17 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-	font-size:  15px;
+    font-size: 15px;
 }
+
 .text {
-	font-size:  20px;
+    font-size: 20px;
 }
 
 .ligneEcran {
-	padding-bottom: 10px;
-	padding-left: 20%;
-	padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20%;
+    padding-top: 10px;
 }
 
 .labelCol {
@@ -69,281 +84,328 @@
     padding-right: 25px;
 }
 
-#password, #mail, #name, #firstname, #pseudo,#addresse1,#addresse2,#city,#postalcode, #country, #number, #date, #securitynumber,#titre, #categorie, #description, #prix, #photo{
-    border : solid #007179;
+#password,
+#mail,
+#name,
+#firstname,
+#pseudo,
+#addresse1,
+#addresse2,
+#city,
+#postalcode,
+#country,
+#number,
+#date,
+#securitynumber,
+#titre,
+#categorie,
+#description,
+#prix,
+#photo {
+    border: solid #007179;
     border-radius: 10px;
-    width:40%;
+    width: 40%;
     height: 20px;
 }
-#description{
+
+#description {
     height: 80px;
 }
-#ratioLigne{
-	height: 20px;
-	margin-left: 40%;
-	text-align: left;
+
+#ratioLigne {
+    height: 20px;
+    margin-left: 40%;
+    text-align: left;
 }
+
 #mdpOublie {
-	padding-bottom: 10px;
-	padding-top: 10px;
-	text-align: center;
-}
-#boutonValiation{
-	text-align: center;
-	border : solid #007179;
-	border-radius: 50px;
-	height: 30px;
-	width: 230px;
-	background-color: #007179;
-	color: white;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 33px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
 }
 
-#ecranInformations, #ecranInformationsP, #ecranInformationsPaiement {
-	border-radius: 20px;
-	display: block;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	margin-bottom: 150px;
-	margin-top: -7px;
-	position: relative;
-	top: 15%;
-	background-color: #007d9ce1;
-	-webkit-box-shadow: 0px 0px 19px #00caeed7;
-	box-shadow: 0px 0px 19px #00caeed7;
-	padding-left: 0%;
-	padding-right: 0px;
-	width: 95%;
-	margin-left: 3%;
-	text-align: center;
-}
-#ecranInformationsPaiement{
-	background-color: rgb(52, 202, 114);
-	text-align: center;
-}
-	
-#ecranInformationsP{
-	height: 200px;
-	padding: 100px;
-	width: 70%;
-	margin-left: 8%;
-}
-#boutonValiation{
-	text-decoration: none;
-	font-size: 20px;
+#boutonValiation {
+    text-align: center;
+    border: solid #007179;
+    border-radius: 50px;
+    height: 30px;
+    width: 230px;
+    background-color: #007179;
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 33px;
 }
 
+#ecranInformations,
+#ecranInformationsP,
+#ecranInformationsPaiement {
+    border-radius: 20px;
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 150px;
+    margin-top: -7px;
+    position: relative;
+    top: 15%;
+    background-color: #007d9ce1;
+    -webkit-box-shadow: 0px 0px 19px #00caeed7;
+    box-shadow: 0px 0px 19px #00caeed7;
+    padding-left: 0%;
+    padding-right: 0px;
+    width: 95%;
+    margin-left: 3%;
+    text-align: center;
+}
 
+#ecranInformationsPaiement {
+    background-color: rgb(52, 202, 114);
+    text-align: center;
+}
 
+#ecranInformationsP {
+    height: 200px;
+    padding: 100px;
+    width: 70%;
+    margin-left: 8%;
+}
 
-
+#boutonValiation {
+    text-decoration: none;
+    font-size: 20px;
+}
 
 
 /**Informations mon compte*/
-a{
-	text-decoration: none;
-	color: black;
+
+a {
+    text-decoration: none;
+    color: black;
 }
-#banderoleTitreCompte{
-	width: 100%;
-	text-align: center;
-	background-color: rgb(53, 200, 219);
-	padding-top: 1px;
-	padding-bottom: 1px;
-	color: rgba(255,255,255,1.00);
+
+#banderoleTitreCompte {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(53, 200, 219);
+    padding-top: 1px;
+    padding-bottom: 1px;
+    color: rgba(255, 255, 255, 1.00);
 }
-#divAction{
-	margin-left: 10%;
-	margin-right: 10%;
+
+#divAction {
+    margin-left: 10%;
+    margin-right: 10%;
 }
-#corpAction{
-	background-color: rgba(58, 255, 143, 0.63);
-	height: 300px;
-	text-shadow: 23px 24px 18px rgba(118,205,178,1.00);
-	padding-left: 20px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	padding-right: 20px;
-	-webkit-box-shadow: 0px 0px 15px rgba(52,180,85,1.00);
-	box-shadow: 0px 0px 15px rgba(52,180,85,1.00);
+
+#corpAction {
+    background-color: rgba(58, 255, 143, 0.63);
+    height: 300px;
+    text-shadow: 23px 24px 18px rgba(118, 205, 178, 1.00);
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    -webkit-box-shadow: 0px 0px 15px rgba(52, 180, 85, 1.00);
+    box-shadow: 0px 0px 15px rgba(52, 180, 85, 1.00);
 }
-#divInformation{
-	min-height: 400px;
-	margin-left: 23%;
-	margin-right: 23%;
-	margin-top: 4%;
-	margin-bottom: 5%;
+
+#divInformation {
+    min-height: 400px;
+    margin-left: 23%;
+    margin-right: 23%;
+    margin-top: 4%;
+    margin-bottom: 5%;
 }
+
 #sectionInformation {
-	background-color: rgb(69, 209, 190);
-	border-radius: 20px;
-	min-height: 400px;
-	padding: 20px;
-	text-align: center;
-	margin-top: 23px;
-	display: block;
-	top: auto;
-	-webkit-box-shadow: 0px 0px 15px rgb(79, 245, 223);
-	box-shadow: 0px 0px 15px rgb(79, 245, 223);
+    background-color: rgb(69, 209, 190);
+    border-radius: 20px;
+    min-height: 400px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 23px;
+    display: block;
+    top: auto;
+    -webkit-box-shadow: 0px 0px 15px rgb(79, 245, 223);
+    box-shadow: 0px 0px 15px rgb(79, 245, 223);
 }
 
-#sectionArticlePanier,#sectionCout{
-	border-radius: 20px;
-	padding: 20px;
-	margin-top: 23px;
+#sectionArticlePanier,
+#sectionCout {
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 23px;
 }
 
-#sectionArticlePanier{
-	-webkit-box-shadow: 0px 0px 15px rgb(53, 53, 53);
-	box-shadow: 0px 0px 15px rgb(70, 70, 70);
-}
-#sectionCout{
-	-webkit-box-shadow: 0px 0px 15px rgb(216, 85, 85);
-	box-shadow: 0px 0px 15px rgb(218, 79, 79);
+#sectionArticlePanier {
+    -webkit-box-shadow: 0px 0px 15px rgb(53, 53, 53);
+    box-shadow: 0px 0px 15px rgb(70, 70, 70);
 }
 
-
-#sectionInformation1{
-	height: auto;
-	overflow: auto;
-}
-#sectionInformation2{
-	margin-bottom: 200px;
-}
-#pp{
-	background-color: black;
-	float: left;
-	margin-left: 30px;
-	height: 170px;
-	width: 150px;
-}
-#informationsPersonnels{
-	float: right;
-	width: 60%;
-	line-height: 22px;
-	margin-top: 29px;
-}
-#tableauDroit{
-	width: 150px;
-	text-align: right;
-}
-#sectionInformation2{
-	align-items: center;
-	margin-left: 18%;
-	margin-right: 18%;
-}
-#tableauDroit2{
-	width: 200px;
-	text-align: right;
+#sectionCout {
+    -webkit-box-shadow: 0px 0px 15px rgb(216, 85, 85);
+    box-shadow: 0px 0px 15px rgb(218, 79, 79);
 }
 
-#boutonAction{
-	height: 25px;
-	width: 150px;
-	padding-top: 5px;
-	border-radius: 10px;
-	background-color: aqua;
+#sectionInformation1 {
+    height: auto;
+    overflow: auto;
+}
+
+#sectionInformation2 {
+    margin-bottom: 200px;
+}
+
+#pp {
+    float: left;
+    margin-left: 30px;
+    height: 170px;
+    width: 150px;
+}
+
+#informationsPersonnels {
+    float: right;
+    width: 60%;
+    line-height: 22px;
+    margin-top: 29px;
+}
+
+#tableauDroit {
+    width: 150px;
+    text-align: right;
+}
+
+#sectionInformation2 {
+    align-items: center;
+    margin-left: 18%;
+    margin-right: 18%;
+}
+
+#tableauDroit2 {
+    width: 200px;
+    text-align: right;
+}
+
+#boutonAction {
+    height: 25px;
+    width: 150px;
+    padding-top: 5px;
+    border-radius: 10px;
+    background-color: aqua;
 }
 
 
 /**Panier*/
 
-#corpPanier{
-	margin-top: 40px;
-	margin-left: 80px;
-	margin-right: 80px;
-	margin-bottom: 40px;
-	min-height: 300px;
-	display: flex;
+#corpPanier {
+    margin-top: 40px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 40px;
+    min-height: 300px;
+    display: flex;
 }
 
-#sectionArticle{
-	padding: 20px;
-	border-radius: 20px;
-	width: 70%;
-	margin-right: 40px;
-	-webkit-box-shadow: black;
-	box-shadow: 0px 0px 15px black;
-}
-#sectionPrix{
-	background-color: rgba(22, 198, 211, 0.705);
-	height: 80px;
-	padding: 10px;
-	padding-bottom: 20px;
-	padding-top: 5px;
-	border-radius: 20px;
-	-webkit-box-shadow: black;
-	box-shadow: 0px 0px 15px black;
-}
-#tableauPanierDroit{
-	min-width: 150px;
-	text-align: right;
-}
-#tableauPanierDroit h2, td h2{
-	font-size: 14px;
-}
-#tableauPanierDroit h3, td h3{
-	font-size: 12px;
-	font-weight: normal;
-}
-#sectionArticle{
-	display: block;
-}
-#divArticle{
-	height: 100px;
-	width: 90%;
-	display: flex;
-	margin-bottom: 10px;
-	margin-top: 10px;
+#sectionArticle {
+    padding: 20px;
+    border-radius: 20px;
+    width: 70%;
+    margin-right: 40px;
+    -webkit-box-shadow: black;
+    box-shadow: 0px 0px 15px black;
 }
 
-#imgArticle{
-	width:140px;
-	height:100px;
-	overflow: hidden;
+#sectionPrix {
+    background-color: rgba(22, 198, 211, 0.705);
+    height: 80px;
+    padding: 10px;
+    padding-bottom: 20px;
+    padding-top: 5px;
+    border-radius: 20px;
+    -webkit-box-shadow: black;
+    box-shadow: 0px 0px 15px black;
 }
-#imgArticle{
-	max-width: 100%;
-	max-height: 100%;
-}
-#informationArticle{
-	width:70%;
-	display: block;
-}
-#titreArticle{
-	padding: 5px;
-	font-size: 14px;
-	font-weight: bold;
-	margin-right: 1px;
-	height: 24px;
-}
-#quantitArticle{
-	padding: 5px;
-	color: rgb(138, 138, 138);
-	font-size: 10px;
-}
-#divAction{
-	width: auto;
-	margin-left: 0px;
-	margin-right: 0px;
 
+#tableauPanierDroit {
+    min-width: 150px;
+    text-align: right;
 }
-#prixArticle{
-	height: 30px;
-	font-size: 14px;
-	font-weight: bold;
+
+#tableauPanierDroit h2,
+td h2 {
+    font-size: 14px;
 }
-#suprimerArticle button img{
-	max-width: 40%;
+
+#tableauPanierDroit h3,
+td h3 {
+    font-size: 12px;
+    font-weight: normal;
 }
-#separation{
-	height:2px;
-	width:70%;
-	margin-left: 15%;
-	background-color: black;
-	-webkit-box-shadow: black;
-	box-shadow: 0px 0px 2px black;
+
+#sectionArticle {
+    display: block;
+}
+
+#divArticle {
+    height: 100px;
+    width: 90%;
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#imgArticle {
+    width: 140px;
+    height: 100px;
+    overflow: hidden;
+}
+
+#imgArticle {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#informationArticle {
+    width: 70%;
+    display: block;
+}
+
+#titreArticle {
+    padding: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 1px;
+    height: 24px;
+}
+
+#quantitArticle {
+    padding: 5px;
+    color: rgb(138, 138, 138);
+    font-size: 10px;
+}
+
+#divAction {
+    width: auto;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#prixArticle {
+    height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#suprimerArticle button img {
+    max-width: 40%;
+}
+
+#separation {
+    height: 2px;
+    width: 70%;
+    margin-left: 15%;
+    background-color: black;
+    -webkit-box-shadow: black;
+    box-shadow: 0px 0px 2px black;
 }

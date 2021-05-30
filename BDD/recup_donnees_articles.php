@@ -8,26 +8,6 @@ try{
 var_dump($_FILES);
 var_dump($_POST);
 
-$pdoStat = $objetPdo->prepare('INSERT INTO article(  titre, categorie, prix, description1, file_name1 , file_url ) VALUES (:titre, :categorie, :prix, :description1, :$file_name1 ,: $file_dest)');
-//on lie chaque marque à une valeur
-$pdoStat->bindValue('titre',$_POST['titre'], PDO::PARAM_STR);
-$pdoStat->bindValue('categorie',$_POST['categorie'], PDO::PARAM_STR);
-$pdoStat->bindValue('prix',$_POST['prix'], PDO::PARAM_STR);
-$pdoStat->bindValue('description1',$_POST['description'], PDO::PARAM_STR);
-echo'salut<br/>';
-//excecution de la requete preparee
-$insertIsOk = $pdoStat->execute();
-if($insertIsOk==1){
-    //header('Location: ../PageAccueil.html');
-    echo 'bien joue ca <br/>';
-}
-else {
-    //header('Location: ../annexes/ErreurInscription.html');
-    echo 'ay chaud <br/>';
-}
-
-
-
 if(!empty($_FILES)){
     $file_name1 = $_FILES['fichier']['name'];
     $file_extension = strrchr($file_name1,".");
@@ -44,7 +24,25 @@ if(!empty($_FILES)){
 
     if(in_array($file_extension, $extentions_autorisees)){
         if(move_uploaded_file($file_tmp_name,$file_dest)){
-            
+
+            $pdoStat = $objetPdo->prepare('INSERT INTO article(  titre, categorie, prix, description1, file_name1 , file_url ) VALUES (:titre, :categorie, :prix, :description1, :$file_name1 ,: $file_dest)');
+            //on lie chaque marque à une valeur
+            $pdoStat->bindValue('titre',$_POST['titre'], PDO::PARAM_STR);
+            $pdoStat->bindValue('categorie',$_POST['categorie'], PDO::PARAM_STR);
+            $pdoStat->bindValue('prix',$_POST['prix'], PDO::PARAM_STR);
+            $pdoStat->bindValue('description1',$_POST['description'], PDO::PARAM_STR);
+            echo'salut<br/>';
+            //excecution de la requete preparee
+            $insertIsOk = $pdoStat->execute();
+            if($insertIsOk==1){
+                //header('Location: ../PageAccueil.html');
+                echo 'bien joue ca <br/>';
+            }
+            else {
+                //header('Location: ../annexes/ErreurInscription.html');
+                echo 'ay chaud <br/>';
+}
+
             echo 'Fichier envoyé avec succes <br/>';
            
         } else{
@@ -54,4 +52,9 @@ if(!empty($_FILES)){
     echo ' Seuls les fichiers JPEG sont autorisés';
     }
 }
+
+
+
+
+
 

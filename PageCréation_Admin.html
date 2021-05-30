@@ -6,18 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ECE MarketPlace - Création compte administrateur</title>
+    <!--Header avec notamment les références des pages liées à la page actuelle-->
     <link rel="stylesheet" type="text/css" href="CSS/style_css_base.css">
     <link rel="stylesheet" type="text/css" href="CSS/style_page_connexion.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="JS/scripte_menu_vertical.js" async></script>
-    <script> 
-        $(function(){
+    <script>
+        /*Fonction qui permet de mettre les informations du footer dans un fichier afin de récupérer
+                                                                                                        et d'afficher ces informations ultérieurement*/
+        $(function() {
             $("#footer").load("FilesStruc/footer.html");
         });
     </script>
 
     <div id="enTete">
         <div id="topEntete">
+            <!--On insère le logo qui permet de revenir à la page principale -->
             <a href="PageAccueil.html"><img id="logoAccueil" src="FIles/logo/ECEMarket_base.png"></a>
             <div id="barreDeRecherche">
                 <table>
@@ -25,6 +29,7 @@
                         <td>
                             <h4>Rechercher</h4>
                         </td>
+                        <!--On insère la barre de recherche-->
                         <td>
                             <input type="search" id="barreRecherche" name="barreRecherche">
                         </td>
@@ -32,7 +37,7 @@
                 </table>
             </div>
         </div>
-
+        <!--On insère les boutons d'accès aux pages de créations de comptes vendeur, client et à la page de connexion de l'administrateur-->
         <div id="divBarreEntete">
             <div id="barreEnteteInscription">
                 <a id="boutonConnexionA" href="PageCréation_Acheteur.html"><img id="logoCompte" src="Files/logo/iconfinder_user_plus.png">Compte client</a>
@@ -47,43 +52,45 @@
     <div id="teteBody"></div>
     <div id="corpBody">
         <div id="corpSite">
-            <div id="banderoleTitreAd"><h1>Créer mon compte administrateur</h1></div>
+            <div id="banderoleTitreAd">
+                <h1>Créer mon compte administrateur</h1>
+            </div>
             <div id="ecranConnexionAd">
-                <h3>Vous souhaitez rejoindre notre équipe ECE MarketPlace en tant qu'administrateur ?
-                    N'hésitez plus et créez votre compte administrateur ECE MarketPlace.</h2>
-        
-                    <form action="BDD\recup_donnees_creation_admin.php" method="post" >
-                        <div class="ligneEcran" >
+                <h3>Vous souhaitez rejoindre notre équipe ECE MarketPlace en tant qu'administrateur ? N'hésitez plus et créez votre compte administrateur ECE MarketPlace.</h2>
+                    <!--On affiche un formulaire que l'administrateur doit remplir lors de la création de son compte (nom, prénom, pseudo, e-mail, mot de passe)-->
+                    <form action="BDD\recup_donnees_creation_admin.php" method="post">
+                        <div class="ligneEcran">
                             <label class="labelCol" for="name">Nom* :</label>
                             <input type="text" required id="name" minlength="2" require name="nom"></td>
                         </div>
-            
+
                         <div class="ligneEcran">
                             <label class="labelCol" for="firstname">Prénom* :</label>
                             <input type="text" required id="firstname" minlength="2" require name="prenom"></td>
                         </div>
-            
+
                         <div class="ligneEcran">
                             <label class="labelCol" for="pseudo" minlength="2" require>Pseudo* :</label>
                             <input type="text" required id="pseudo" name="pseudo"></td>
                         </div>
-            
+
                         <div class="ligneEcran">
                             <label class="labelCol" for="mail">Email* :</label>
-                            <input type="email" required pattern=".+.fr|.+.com" id="mail" minlength="8" require name="mail" ></td>
+                            <input type="email" required pattern=".+.fr|.+.com" id="mail" minlength="8" require name="mail"></td>
                         </div>
-            
+
                         <div class="ligneEcran">
                             <label class="labelCol" for="password">Mot de passe* :</label>
-                            <td><input type="password" required id="password"  minlength="8" require name="mdp" ></td>
+                            <td><input type="password" required id="password" minlength="8" require name="mdp"></td>
                             </tr>
                         </div>
-            
-                        <button id="boutonConnexion" type="submit" >Créer</button>
+                        <!--Bouton de validation des informations saisies-->
+                        <button id="boutonConnexion" type="submit">Créer</button>
                     </form>
             </div>
         </div>
     </div>
 </body>
 <div id="footer"></div>
+
 </html>

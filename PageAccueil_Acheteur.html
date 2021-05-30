@@ -12,16 +12,18 @@
     <script src="JS/scripte_menu_vertical.js" async></script>
     <script>
         /*Fonction qui permet de mettre les informations du footer et du menu vertical dans un fichier afin de récupérer
-                                            et d'afficher ces informations ultérieurement*/
+                                                et d'afficher ces informations ultérieurement*/
         $(function() {
             $("#footer").load("FilesStruc/footer.html");
             $("#menuVertical").load("FilesStruc/menuVertical.html");
+            $("#actualites").load("FilesStruc/actualite.html");
         });
     </script>
 
 
     <div id="enTete">
         <div id="topEntete">
+            <!--On insère le logo qui permet de revenir à la page principale -->
             <a href="PageAccueil_Acheteur.html"><img id="logoAccueil" src="files/logo/ECEMarket_base.png"></a>
             <div id="barreDeRecherche">
                 <table>
@@ -68,9 +70,7 @@
                     <a href=""><img src="files/img/2000x-_MEG_FDM.jpg" alt="Annonce1"></a>
                 </div>
             </div>
-            <div id="actualites">
-                a rajouter
-            </div>
+            <div id="actualites"></div>
         </div>
     </div>
 </body>

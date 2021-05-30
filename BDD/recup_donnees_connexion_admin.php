@@ -18,12 +18,6 @@
       
         if($mdp === $res['mdp'] AND $mail === $res['mail'])
         {
-            session_start();
-            $req = $bdd->prepare('SELECT id_admin FROM administrateur WHERE mail = :mail AND mdp = :mdp');
-            $req->execute(array(':id_admin'=>$id_admin));
-            $res = $req->fetch();
-
-            $_SESSION['id_admin']=$res;
             header('Location: PageAccueil_Admin.html');
         }
         else
@@ -35,8 +29,7 @@
    }
    else
    {
-       //renvoi du formulaire
-       echo 'Le mail ou mot de passe est incorrect';
+    header('Location: ../Annexes/PageAccueil_VendeurErreur.html');
         
    }
 }

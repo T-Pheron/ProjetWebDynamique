@@ -6,12 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ajout article - ECE MarketPlace</title>
+    <!--Header avec notamment les références des pages liées à la page actuelle-->
     <link rel="stylesheet" type="text/css" href="../CSS/style_css_base.css">
     <link rel="stylesheet" type="text/css" href="../CSS/style_page_acheteur.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="../JS/scripte_menu_vertical.js" async></script>   
-    <script> 
-        $(function(){
+    <script src="../JS/scripte_menu_vertical.js" async></script>
+    <script>
+        /*Fonction qui permet de mettre les informations du footer et du menu vertical dans un fichier afin de récupérer
+                                                                                                                        et d'afficher ces informations ultérieurement*/
+        $(function() {
             $("#footer").load("../FilesStruc/footer.html");
             $("#header").load("../FilesStruc/header.html");
         });
@@ -20,12 +23,13 @@
 
     <div id="enTete">
         <div id="topEntete">
+            <!--On insère le logo qui permet de revenir à la page principale -->
             <a href="../Vendeur/PageCompte_Vendeur.html"><img id="logoAccueil" src="../FIles/logo/ECEMarket_base.png"></a>
             <div id="titrePrincipal">
                 <h2>Article</h2>
             </div>
         </div>
-
+        <!--On insère le bouton de connexion au compte-->
         <div id="divBarreEntete">
             <div id="barreEnteteInscription">
                 <a id="boutonConnexionA" href="PageCompte_Vendeur.html"><img id="logoCompte" src="../Files/logo/iconfinder_User.png">Mon compte</a>
@@ -38,16 +42,19 @@
     <div id="teteBody"></div>
     <div id="corpBody">
         <div id="corpSite">
-            <div id="banderoleTitre"><img src="../Files/logo/iconfinder_add_article.png" alt="Image livraison" id="imgTitre"><h1>Informations article</h1></div>
+            <div id="banderoleTitre"><img src="../Files/logo/iconfinder_add_article.png" alt="Image livraison" id="imgTitre">
+                <h1>Informations article</h1>
+            </div>
             <div id="ecranInformations">
                 <h3>Veuillez rentrez les informations de l'article :</h2>
-        
+                    <!--On affiche un formulaire où le vendeur/l'administrateur qui souhaite ajouter un article à la base de données doit remplir les informations.
+Il doit renseigner le titre, la catégorie, le prix, la description et la photo de l'article qu'il veut ajouter à la BDD-->
                     <form action="../BDD/recup_donnees_articles.php" method="post" enctype="multipart/form-data">
                         <div class="ligneEcran">
                             <label class="labelCol" for="titre">Titre :</label>
                             <input type="text" required id="titre" minlength="2" require name="titre">
                         </div>
-        
+                        <!--Affichage de toutes les catégories d'articles que peut choisir le vendeur/administrateur souhaitant ajouter un article de catégorie spécifique.-->
                         <div class="ligneEcran">
                             <label class="labelCol" for="categorie">Catégorie :</label>
                             <select name="categorie" id="categorie">
@@ -64,22 +71,22 @@
                                 <option value="Jardin"> Jardin, Bricolage </option>
                                 </select>
                         </div>
-        
+                        <!--Entrée du prix de l'article qu'on veut ajouter-->
                         <div class="ligneEcran">
                             <label class="labelCol" for="prix">Prix :</label>
                             <input type="number" required id="prix" name="prix">
                         </div>
-        
+                        <!--Entrée de la description de l'article qu'on veut ajouter-->
                         <div class="ligneEcran">
                             <label class="labelCol" for="description">Description :</label>
                             <input type="text" id="description" minlength="20" maxlength="200" require name="description">
                         </div>
-        
+                        <!--Entrée de la photo de l'article qu'on veut ajouter-->
                         <div class="ligneEcran">
                             <label class="labelCol" for="photo">Photo :</label>
                             <input type="file" accept=".jpeg" name="fichier" required id="photo">
                         </div>
-            
+                        <!--Bouton de validation des informations entrées-->
                         <button type="submit" id="boutonValiation">Valider</button>
                     </form>
             </div>
@@ -87,4 +94,5 @@
     </div>
 </body>
 <div id="footer"></div>
+
 </html>
