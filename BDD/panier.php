@@ -18,8 +18,8 @@ class panier {
     }
 
     public function recalc() {
-        foreach($_SESSION['panier'] as $produit_Id_Item => $quantite) {
-            if(isset($_POST['panier']['quantite'][$produit_Id_Item])) {
+        foreach($_SESSION['panier'] as $produit_id_article => $quantite) {
+            if(isset($_POST['panier']['quantite'][$produit_id_article])) {
                 $_SESSION['panier'] = $_POST['panier']['quantite'];
             }
         }
@@ -44,17 +44,17 @@ class panier {
         return $total;
     }
 
-    public function ajouter($produit_Id_Item) {
-        if(isset($_SESSION['panier'][$produit_Id_Item])) {
-            $_SESSION['panier'][$produit_Id_Item]++;
+    public function ajouter($produit_id_article) {
+        if(isset($_SESSION['panier'][$produit_id_article])) {
+            $_SESSION['panier'][$produit_id_article]++;
         }
         else {
-            $_SESSION['panier'][$produit_Id_Item]=1;
+            $_SESSION['panier'][$produit_id_article]=1;
         }
     }
 
-    public function del($produit_Id_Item) {
-        unset($_SESSION['panier'][$produit_Id_Item]);
+    public function del($produit_id_article) {
+        unset($_SESSION['panier'][$produit_id_article]);
     }
 
 

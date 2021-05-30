@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
+    <!--Header avec notamment les références des pages liées à la page actuelle-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -8,10 +10,12 @@
     <link rel="stylesheet" type="text/css" href="CSS/style_css_base.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="JS/scripte_menu_vertical.js" async></script>
-    <script> 
-        $(function(){
+    <script>
+        /*Fonction qui permet de mettre les informations du footer et du menu vertical dans un fichier afin de récupérer
+                                            et d'afficher ces informations ultérieurement*/
+        $(function() {
             $("#footer").load("FilesStruc/footer.html");
-            $("#menuVertical").load("FilesStruc/menuVertical.html"); 
+            $("#menuVertical").load("FilesStruc/menuVertical.html");
         });
     </script>
 
@@ -25,6 +29,7 @@
                         <td>
                             <h4>Rechercher</h4>
                         </td>
+                        <!--On insère la barre de recherche-->
                         <td>
                             <input type="search" id="barreRecherche" name="barreRecherche">
                         </td>
@@ -32,19 +37,21 @@
                 </table>
             </div>
         </div>
-        
+
         <div id="divBarreEntete">
             <div id="boutonMenu">
+                <!--On insère le bouton permettant d'accèder à toutes les catégories d'articles-->
                 <button id="boutonMenuB">Catégories</button>
             </div>
             <div id="barreEntete">
+                <!--On insère les boutons de notifications, du compte acheteur et de son panier-->
                 <a class="boutonNav" href="TrucpourAllerAuNotif"><img id="logoNotification" src="files/logo/notification_remind.png">Notifications</a>
-                <a class="boutonNav" href="Acheteur/PageCompte.html"><img id="logoCompte" src="files/logo/iconfinder_User.png">Mon compte</a>
-                <a class="boutonNav" href="TrucpourAllerAuPanier"><img id="logoPanier" src="files/logo/iconfinder_cart.png">Panier</a>
+                <a class="boutonNav" href="Acheteur/PageCompte_Acheteur.php"><img id="logoCompte" src="files/logo/iconfinder_User.png">Mon compte</a>
+                <a class="boutonNav" href="Acheteur/Panier_Acheteur.php"><img id="logoPanier" src="files/logo/iconfinder_cart.png">Panier</a>
             </div>
         </div>
-        
-        
+
+
     </div>
 </head>
 
@@ -54,6 +61,7 @@
         <div id="menuVertical"></div>
         <div id="corpSite">
             <div id="banderoleEvenement">
+                <!--On insère une banderole affichant les évènements du moment-->
                 <div class="imageBanderoleEvenement">
                     <a href=""><img src="files/img/2000x-_MEG__FD_2021.png" alt="Annonce1"></a>
                     <a href=""><img src="files/img/2000x-_MEG_Crew-X-Abritel_v2.jpg" alt="Annonce1"></a>
@@ -61,10 +69,11 @@
                 </div>
             </div>
             <div id="actualites">
-                Mais vraiment
+                a rajouter
             </div>
         </div>
     </div>
 </body>
 <div id="footer"></div>
+
 </html>

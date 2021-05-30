@@ -19,6 +19,13 @@ $insertIsOk = $pdoStat->execute();
 
 
 if($insertIsOk==1){
+    session_start();
+    $_SESSION["nom"]=$_POST['nom'];
+    $_SESSION["prenom"]=$_POST['prenom'];
+    $_SESSION["pseudo"]=$_POST['pseudo'];
+    $_SESSION["mail"]=$_POST['mail'];
+    $_SESSION["mdp"]=$_POST['mdp'];
+
     header('Location: ../PageAccueil_Acheteur.html');
 }
 else {

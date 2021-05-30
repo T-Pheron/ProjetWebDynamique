@@ -81,3 +81,15 @@
 	max-width: 40%;
 	max-height: 40%;
 }
+
+#banderoleBouton{
+	display: flex;
+	padding: 10px;
+	background-color:brown;
+}
+
+#boutonTrier{
+	min-width: 40px;
+	min-width: 10px;
+	background-color: red;
+}

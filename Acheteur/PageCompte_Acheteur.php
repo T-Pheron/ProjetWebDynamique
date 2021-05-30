@@ -5,14 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mon compte - ECE MarketPlace</title>
-	      <!--Liens avec les autres pages reliées à la page actuelle-->
     <link rel="stylesheet" type="text/css" href="../CSS/style_css_base.css">
     <link rel="stylesheet" type="text/css" href="../CSS/style_page_acheteur.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="../JS/scripte_menu_vertical.js" async></script>
     <script> 
-	/*Fonction qui permet de mettre les informations du footer et du menu vertical dans un fichier afin de récupérer
-    et d'afficher ces informations ultérieurement*/
         $(function(){
             $("#footer").load("../FilesStruc/footer.html");
             $("#menuVertical").load("../FilesStruc/menuVertical.html"); 
@@ -22,7 +19,6 @@
 
     <div id="enTete">
         <div id="topEntete">
-			<!--On insère le logo qui permet de revenir à la page principale -->
             <a href="../PageAccueil_Acheteur.html"><img id="logoAccueil" src="../files/logo/ECEMarket_base.png"></a>
             <div id="barreDeRecherche">
                 <table>
@@ -51,6 +47,23 @@
 </head>
 
 <body>
+    <?php
+
+    //connexion à la base de données
+    try{
+    $pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
+    $bdd = new PDO('mysql:host=localhost;dbname=ece_market_place_bdd','root','',$pdo_options);
+    /*
+    $req = $bdd->prepare('SELECT nom, prenom, psuedo, mail FROM acheteur WHERE id_acheteur = :$_SESSION["id_acheteur"]');
+    $req->execute(array(':nom' => $nom, ':prenom' => $prenom, ':pseudo' => $pseudo,':mail' => $mail));
+    $res = $req->fetchAll();
+      */  
+    
+    var_dump($res);
+    }catch (Exception $e){
+    die('Erreur : ' . $e->getMessage());
+    }
+    ?>
 	<div id="teteBody"></div>
 	<div id="corpBody">
 		<div id="menuVertical"></div>
@@ -67,19 +80,19 @@
 							<table>
 								<tr>
 									<td id="tableauDroit">Nom : </td>
-									<td>Ce que joe doit mettre</td>
+									<td><?=$_SESSION['nom'] ?></td>
 								</tr>
 								<tr>
 									<td id="tableauDroit">Prénom : </td>
-									<td>Ce que joe doit mettre</td>
+									<td><?=$_SESSION['prenom'] ?></td>
 								</tr>
 								<tr>
 									<td id="tableauDroit">Pseudo : </td>
-									<td>Ce que joe doit mettre</td>
+									<td><?=$_SESSION['pseudo'] ?></td>
 								</tr>
 								<tr>
 									<td id="tableauDroit">Email : </td>
-									<td>Ce que joe doit mettre</td>
+									<td><?=$_SESSION['mail'] ?></td>
 								</tr>
 							</table>
 						</div>

@@ -1,3 +1,6 @@
+<?php
+    require '../BDD/header.php';
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -33,7 +36,6 @@
                 </table>
             </div>
         </div>
-        
         <div id="divBarreEntete">
             <div id="boutonMenu">
                 <button id="boutonMenuB">Catégories</button>
@@ -43,8 +45,6 @@
                 <a class="boutonNav" href="PageCompte_Acheteur.html"><img id="logoPanier" src="../files/logo/iconfinder_User.png">Mon compte</a>
             </div>
         </div>
-        
-        
     </div>
 </head>
 
@@ -56,19 +56,23 @@
 			<div id="banderoleTitreCompte"><h2>Mon compte</h2></div>
 			<div id="corpPanier">
 				<div id="sectionArticle">
+					<?php $article = $BDD->query('SELECT * FROM article AS a, panier AS p,acheteur AS ach WHERE a.id_article=p.id_article AND p.id_acheteur=ach.id_acheteur'); ?>
+					<?php foreach ($article as $key => $article): ?>
 					<div id="divArticle">
-						<div id="imgArticle"><img src="" alt="photoArtcile"></div>
+						<div id="imgArticle"><img src="<?= $article->file_url ?>" alt="photoArtcile"></div>
 						<div id="informationArticle">
-							<div id="titreArticle"> Le titre de l'article</div>
+							<div id="titreArticle"> <?= $article->titre ?></div>
 							<div id="quantitArticle">Quantité : </div>
 						</div>
 						<div id=divAction>
-							<div id="prixArticle">Le prix</div>
+							<div id="prixArticle"><?= number_format($article->prix,2,',',''); ?>€</div>
 							<div id="suprimerArticle"><button><img src="../Files/logo/iconfinder_trash-bin.png" alt="poubelle"></button></div>
 						</div>
 					</div>
 					<div id="separation"></div>
+                    <?php endforeach ?>
 				</div>
+				
 					<div id="sectionPrix">
 						<table>
 							<tr>
@@ -82,38 +86,8 @@
 						</table>
 					</div>
 				</div>
-				
 			</div>
 		</div>
 	</body>
 	<div id="footer"></div>
 	</html>
-
-    <section class="page-header header container-fluid">
-		<br>
-		<div class="Achat">
-			<h1>Matériel Scolaire</h1>
-		</div>
-		<?php $produit = $DB->query('SELECT * FROM produit WHERE Categorie = "Matériel scolaire"'); ?>
-		<?php foreach ($produit as $key => $produit): ?>
-		<div class="pListe">
-			<div class="pImage">
-            <p><img src="Img/<?= $produit->Id_Item;?>.jpg" width="140px"></p>
-			</div>
-			<div class="pInformations">
-            <h5><?= $produit->Nom ?></h5>
-				<p><?= $produit->Description ?></p>
-			</div>
-			<div class="pQuantite">
-            <p><?= number_format($produit->Prix,2,',',''); ?>€</p>
-			</div>
-			<div class="pAjouterPanier">
-				<a class="ajouterpanier" href="ajouterpanier.php?id=<?= $produit->Id_Item; ?>">
-					<img src="Img/panier.jpg" alt="Panier" width="40px">
-				</a>
-			</div>
-		</div>
-		<br>
-        <?php endforeach ?>
-		<br>
-    </section>

@@ -1,206 +1,258 @@
-html, body {
-	margin: 0px;
-	padding: 0px;
-	font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
-	justify-content: center;
-	background-color: #ffffff;
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    justify-content: center;
+    background-color: #ffffff;
     height: 100%;
     width: auto;
-	text-align: center;
+    text-align: center;
 }
+
 body {
-	width: 100%;
-	margin-right: auto;
-	height: auto;
+    width: 100%;
+    margin-right: auto;
+    height: auto;
 }
-#enTete{
-	position: fixed;
-	width: 100%;
-	height: 112px;
-	z-index: 10;
-	border-bottom-color: #2E2E2E;
-	color: #424242;
-	-webkit-box-shadow: 0 -3px 116px #000000;
-	box-shadow: 0 -3px 116px #000000;
+
+#enTete {
+    position: fixed;
+    width: 100%;
+    height: 112px;
+    z-index: 10;
+    border-bottom-color: #2E2E2E;
+    color: #424242;
+    -webkit-box-shadow: 0 -3px 116px #000000;
+    box-shadow: 0 -3px 116px #000000;
 }
-#topEntete{
+
+#topEntete {
     background-color: #007179;
     height: 70px;
 }
-#logoAccueil{
+
+#logoAccueil {
     height: 50px;
     margin: 10px;
     float: left;
 }
-#barreDeRecherche{
+
+#barreDeRecherche {
     margin-left: 30%;
     width: 100%;
     color: rgb(255, 255, 255);
 }
-#barreDeRecherche table, #titrePrincipal{
+
+#barreDeRecherche table,
+#titrePrincipal {
     width: 50%;
     text-align: right;
     vertical-align: center;
 }
-#barreRecherche{
+
+#barreRecherche {
     width: 100%;
     border: 3px solid #007179;
-    border-radius:5px;
+    border-radius: 5px;
     height: 30px;
 }
-#titrePrincipal{
-    margin-top:0px;
+
+#titrePrincipal {
+    margin-top: 0px;
     padding-top: 5px;
     color: rgb(255, 255, 255);
 }
 
-#divBarreEntete{
+#divBarreEntete {
     height: 45px;
-    padding:0px;
+    padding: 0px;
     margin: 0px;
     background-color: white;
 }
-#barreEntete,#barreEnteteInscription {
+
+#barreEntete,
+#barreEnteteInscription {
     padding: 10px;
     background-color: #008892;
     height: 25px;
-    text-align:right;
+    text-align: right;
     overflow: hidden;
     vertical-align: middle;
     float: right;
     width: 85%;
 }
-#barreEnteteInscription{
+
+#barreEnteteInscription {
     width: 100%;
 }
 
-#boutonMenu{
+#boutonMenu {
     float: left;
     background-color: rgb(255, 255, 255);
-    text-align : center;
+    text-align: center;
     padding-top: 10px;
-    padding-left:2%;
+    padding-left: 2%;
 }
 
-#boutonMenu button{
-    color:#007179;
+#boutonMenu button {
+    color: #007179;
     border: 0px;
     background-color: transparent;
-    height:23px;
+    height: 23px;
     font-size: 20px;
     font-weight: bold;
 }
-#boutonMenu button:hover{
+
+#boutonMenu button:hover {
     color: #02cbda;
     border-bottom: 2px solid gold;
 }
-.boutonNav, #boutonConnexionAd, #boutonConnexionV, #boutonConnexionA{
+
+.boutonNav,
+#boutonConnexionAd,
+#boutonConnexionV,
+#boutonConnexionA {
     padding: 8px;
     background-color: rgb(255, 255, 255);
     border: 3px solid #007179;
-    border-radius:5px;
+    border-radius: 5px;
     text-decoration: none;
     color: #007179;
 }
-#boutonConnexionAd{
+
+#boutonConnexionAd {
     color: #c70000
 }
-#boutonConnexionV{
+
+#boutonConnexionV {
     color: #003c5f;
 }
-#boutonConnexionA{
+
+#boutonConnexionA {
     color: #02cbda;
 }
 
-.boutonNav img,  #boutonConnexionAd img, #boutonConnexionV img, #boutonConnexionA img {
+.boutonNav img,
+#boutonConnexionAd img,
+#boutonConnexionV img,
+#boutonConnexionA img {
     height: 20px;
     padding: 5px;
     vertical-align: middle;
 }
-#menuVertical{
-	background-color: rgb(255, 255, 255);
-	width: 200px;
-	display: none;
-	transition: width 1s;
-	z-index: 10;
-	overflow: hidden;
-	position: fixed;
-	-webkit-box-shadow: -31px 109px 116px 31px #000000;
-	box-shadow: -31px 109px 116px 31px #000000;
+
+#menuVertical {
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    display: none;
+    transition: width 1s;
+    z-index: 10;
+    overflow: hidden;
+    position: fixed;
+    -webkit-box-shadow: -31px 109px 116px 31px #000000;
+    box-shadow: -31px 109px 116px 31px #000000;
 }
-#menuVertical a{
+
+#menuVertical a {
     text-decoration: none;
     color: #008892;
 }
-#menuVertical div{
+
+#menuVertical div {
     padding: 10px 20px 30px 10px;
     border-top: 0.5px solid #007179;
 }
 
-#corpSite{
-    width:100%;
-	min-height: 500px;
+#corpSite {
+    width: 100%;
+    min-height: 500px;
     transition: width 1s, left 1s;
     position: relative;
     left: 0%;
 }
-#teteBody{
+
+#teteBody {
     height: 115px;
 }
+
 #corpBody {
-	text-align: left;
-	margin-top: -20px;
-	padding-top: 19px;
-	display: flex;
-	overflow: hidden;
-    height:auto;
+    text-align: left;
+    margin-top: -20px;
+    padding-top: 19px;
+    display: flex;
+    overflow: hidden;
+    height: auto;
 }
-#banderoleEvenement{
+
+#banderoleEvenement {
     height: 400px;
-    overflow:hidden;
+    overflow: hidden;
     background-color: #ffffff;
 }
-#banderoleEvenement .imageBanderoleEvenement{
+
+#banderoleEvenement .imageBanderoleEvenement {
     display: flex;
     animation-duration: 20s;
-    animation-name:imageBanderoleEvenement ;
+    animation-name: imageBanderoleEvenement;
     animation-iteration-count: infinite;
 }
-@keyframes imageBanderoleEvenement{
-    10%{
-        transform:translateX(0);
+
+@keyframes imageBanderoleEvenement {
+    10% {
+        transform: translateX(0);
     }
-    20%{
-        transform:translateX(-2000px);
+    20% {
+        transform: translateX(-2000px);
     }
-    50%{
-        transform:translateX(-2000px);
+    50% {
+        transform: translateX(-2000px);
     }
-    60%{
-        transform:translateX(-4000px);
+    60% {
+        transform: translateX(-4000px);
     }
-    90%{
-        transform:translateX(-4000px);
+    90% {
+        transform: translateX(-4000px);
     }
-    100%{
-        transform:translateX(0);
+    100% {
+        transform: translateX(0);
     }
 }
 
-#actualites{
-    background-color: #9bcecf;
+#actualites {
+    background-color:white;
     padding: 5px;
-    height: 5000px;
-    text-align:center;
+    height: 500px;
+    text-align: center;
 }
 
-footer{
-	width: 100%;
-	background-color: #0a2e30;
-    color:#99c8ca;
-	padding: 5px;
-	height: 110px;
-	text-align: center;
-	height: 130px;
+footer {
+    width: 100%;
+    background-color: #0a2e30;
+    color: #99c8ca;
+    padding: 5px;
+    height: 110px;
+    text-align: center;
+    height: 130px;
     text-decoration: none;
+}
+
+
+/*Actualité*/
+
+#titreActualité {
+    height: 20px;
+    width: 100%;
+    padding: 10px;
+}
+
+#sectionAffichage {
+    display: flex;
+    height: 100px;
+}
+
+#sectionAffichageArticle {
+    width: 20%;
+    border-radius: 5px;
+    background-color:#99c8ca;
 }
